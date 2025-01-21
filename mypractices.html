@@ -7,21 +7,6 @@
 <head>
 <title> my practices </title>
 
-<div id="head">
-<h1> Practices </h1> 
-</div>
-<hr color="black"/>
-
-<div id="top">
-<ul>
-<a href="list.html">
-<li> list </li>
-
-<a href="menu.html">
-<li> menu </li>
-</ul>
-</a>
-</div>
 </head>
 
 <style>
@@ -30,7 +15,7 @@
 padding:30px;
 font-size:250%;
 background:#F5CCD2;
-width:20%;
+width:30%;
 text-align:;
 margin:auto;
 }
@@ -42,12 +27,30 @@ width:30%;
 margin:auto;
 box-shadow:10px 10px 10px gray;
 }
+#top ul li
+{
+padding:30px;
+width:70%;
+cursor:pointer;
+transition:0.5s;
+margin-left:6px;
+font-size:20px;
+}
+
+#top ul li:hover
+{
+background:#E7DDFF;
+transform:scale(1.20);
+transition:0.5s;
+}
+
 /* Extra small devices (phones, 600px and down)  */
 
 @media only screen and (max-width: 600px)
  {
 body{background:;}
-#top {font-size:35px;}
+#top {font-size:35px;
+       width:40%;}
 #head{font-size:20px;
        width:60%;}
  }
@@ -62,9 +65,38 @@ width:70%}
 @media only screen and (min-width: 1200px) 
 {
 #head{font-size:20px;width:50%;}
+#top {width:20%}
+
+
+
 }
 
 
 </style>
+
+<body>
+
+<div id="head">
+<h1> Practices </h1> 
+</div>
+<hr color="black"/>
+
+<div id="top">
+<ul>
+<a href="list.html">
+<li> list </li>
+
+<a href="menu.html">
+<li> menu </li>
+
+<a href="photogallery.html">
+<li> photogallery </li>
+</ul>
+</a>
+</div>
+
+
+
+</body>
 
 </html>
