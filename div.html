@@ -2,14 +2,48 @@
 
 <html>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
 
 <title> div </title>
+
+<div id="menu">
+ 
+<ul>
+  <li> <a href="">Home </a> </li>
+  <li><a href="">profile </a></li>
+  <li><a href="">Cart </a> </li>
+  <li><a href="">Trending </a> </li>
+  <li><a href="">Wishlist </a> </li>
+</ul>
+
+
+</div>
 
 </head>
 
 <style>
 
+#menu
+  {width:97%;
+  height:10px;
+  background:#F2C47F;
+  margin-top:0px;
+  padding:25px;
+  margin:;}
+
+#menu ul li 
+   {list-style:none;
+   display:inline-block;
+   font-size:30px;
+   color:white;
+   padding:40px;
+   text-align:right;}
+
+#menu ul li a:visited
+   {color:white;}
+  
 div
  {border:1px black solid;}
 
@@ -31,19 +65,12 @@ body
   {color:white;
   font-size:200px;
   font-family:Arial black;
-  text-shadow:5px 5px 10px pink;}
-
-#menu
-  {width:60%;
-  height:10px;
-  background:#F7E3E6;
-  margin-top:20px;
-  padding:20px;
-  margin-left:400px;}
+  text-shadow:5px 5px 10px #FC8094;
+  text-align:center;}
 
 .card
   {width:20%;
-  height:400px;
+  height:550px;
   box-shadow:10px 10px 10px gray;
   margin:10px;
   text-align:center;
@@ -51,7 +78,105 @@ body
   padding:20px;
   text-align:center
   background:yellow;
-  overflow:scroll;} 
+  //--overflow:scroll;
+  float:left;
+  margin-left:150px;
+  margin-top:40px;
+  } 
+
+.card ol li
+   {list-style:none;
+   font-size:25px;
+   padding:1px;
+   margin:4px; }
+
+.pic
+  {width:70%;
+   height:300px;}
+
+
+@media only screen and (max-width: 600px)
+   
+  {
+    #topheader span
+      {font-size:30px;
+       text-align:center;
+       width:100%;}
+    
+    #topheader
+       {width:100%;
+        height:100px;}
+     
+    body{background:;}
+    
+    #menu
+       {height:1px;
+        width:90%;}
+
+    #menu ul li
+       {font-size:15px;
+        padding:5px;
+       }
+      
+    .card
+       {width:70%;
+        height:380px;
+        box-shadow:10px 10px 10px gray;
+        margin:4px;    
+        text-align:center; 
+        border-radius:10px;
+        padding:2px;
+        text-align:center
+        background:yellow;
+        margin-top:10px;
+        margin-left:40px;
+        font-size:10px;}              
+    
+          
+    .pic
+     {width:50%;
+     height:150px;}
+   
+     .card ol li
+        {font-size:15px;
+        padding:1px;
+        margin:5px;
+        margin-right:33px;}
+
+        
+   } 
+   
+@media only screen and (min-width: 992px) 
+{
+    
+   .card
+  {width:20%;
+  height:550px;
+  box-shadow:10px 10px 10px gray;
+  margin:10px;
+  text-align:center;
+  border-radius:10px;
+  padding:20px;
+  text-align:center
+  background:yellow;
+  //--overflow:scroll;
+  float:left;
+  margin-left:150px;
+  margin-top:40px;
+  } 
+
+.card ol li
+   {list-style:none;
+   font-size:25px;
+   padding:1px;
+   margin:4px; }
+
+.pic
+  {width:70%;
+   height:300px;}
+
+}
+
 
 </style>
 
@@ -60,26 +185,169 @@ body
 <div id="topheader">
 
 <span>
-  Amazone
+  Amazon
 </span>
 
 </div>
 
-<div id="menu"> </div>
-
 <div class="card">
-<h3> Product </h3> 
 
-<p>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
 
-<p>
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<h3 style="text-indent:0;text-align:center;background:#FFBC57; font-size:30px;padding:3px;box-shadow:10 px 10px 10px gray";> White floral dress </h3>
 
-</p>
+<img src="images/dress1.png"class="pic">
+
+<ol>
+   <li> Price: Rs 599  </li>
+   <li>Color: White  </li>
+   <li> Size: S,M,L,XL </li>
+   <li><span style="color:white;width:200px;background:orange;padding:3px;margin:4px"> Add to cart </span>
+
+<button style="color:White;font-size:20px; background:black">+</button> </li>
+</ol>
 
 </div>
+
+<div class="card">
+
+<h3 style="text-indent:0;text-align:center;background:#FFBC57; font-size:30px;padding:3px;box-shadow:10 px 10px 10px gray";> White cotton shirt </h3>
+
+<img src="images/dress2.png"class="pic">
+
+<ol>
+   <li> Price: Rs 499  </li>
+   <li>Color: White  </li>
+   <li> Size: S,M,L,XL </li>
+   <li><span style="color:White;width:200px;background:orange;padding:3px;margin:4px"> Add to cart </span>
+
+<button style="color:white;font-size:20px; background:black">+</button> </li>
+</ol>
+
+</div>
+
+<div class="card">
+
+<h3 style="text-indent:0;text-align:center;background:#FFBC57; font-size:30px;padding:3px;box-shadow:10 px 10px 10px gray";>White kurti</h3>
+
+<img src="images/dress3.png"class="pic">
+
+<ol>
+  <li> Price: Rs 699  </li>
+  <li>Color: White  </li>
+  <li> Size: S,M,L,XL </li>
+  <li><span style="color:White;width:200px;background:orange;padding:3px;margin:4px"> Add to cart </span>
+
+<button style="color:white;font-size:20px; background:black">+</button> </li>
+</ol>
+
+</div>
+
+
+<div class="card">
+
+<h3 style="text-indent:0;text-align:center;background:#FFBC57; font-size:30px;padding:3px;box-shadow:10 px 10px 10px gray";> A-line yellow kurti </h3>
+
+<img src="images/dress4.png"class="pic">
+
+<ol>
+  <li> Price: Rs 799  </li>
+  <li>Color: Yellow  </li>
+  <li> Size: S,M,L,XL </li>
+  <li><span style="color:white;width:200px;background:orange;padding:3px;margin:4px"> Add to cart </span>
+
+<button style="color:white;font-size:20px; background:black">+</button> </li>
+</ol>
+
+
+</div>
+
+<div class="card">
+
+<h3 style="text-indent:0;text-align:center;background:#FFBC57; font-size:30px;padding:3px;box-shadow:10 px 10px 10px gray";> Floor length kurti </h3>
+
+<img src="images/dress5.png"class="pic">
+
+<ol>
+  <li> Price: Rs 599  </li>
+  <li>Color: Green </li>
+  <li> Size: S,M,L,XL </li>
+  <li><span style="color:white;width:200px;background:orange;padding:3px;margin:4px"> Add to cart </span>
+
+<button style="color:white;font-size:20px; background:black">+</button> </li>
+</ol>
+
+</div>
+
+
+<div class="card">
+
+<h3 style="text-indent:0;text-align:center;background:#FFBC57; font-size:30px;padding:3px;box-shadow:10 px 10px 10px gray";> Anarkali kurti </h3>
+
+<img src="images/dress6.png"class="pic">
+
+<ol>
+  <li> Price: Rs 999  </li>
+  <li>Color: Blue  </li>
+  <li> Size: S,M,L,XL </li>
+  <li><span style="color:white;width:200px;background:orange;padding:3px;margin:4px"> Add to cart </span>
+
+<button style="color:white;font-size:20px; background:black">+</button> </li>
+</ol>
+
+
+</div>
+
+<div class="card">
+
+<h3 style="text-indent:0;text-align:center;background:#FFBC57; font-size:30px;padding:3px;box-shadow:10 px 10px 10px gray";> Black skirt </h3>
+
+<img src="images/dress7.png"class="pic">
+
+<ol>
+   <li> Price: Rs 399  </li>
+   <li>Color: Black  </li>
+   <li> Size: S,M,L,XL </li>
+   <li><span style="color:white;width:200px;background:orange;padding:3px;margin:4px"> Add to cart </span>
+
+<button style="color:White;font-size:20px; background:black">+</button> </li>
+</ol>
+
+</div>
+<div class="card">
+
+<h3 style="text-indent:0;text-align:center;background:#FFBC57; font-size:30px;padding:3px;box-shadow:10 px 10px 10px gray";> Long dress </h3>
+
+<img src="images/dress8.png"class="pic">
+
+<ol>
+   <li> Price: Rs 599  </li>
+   <li>Color: Pink </li>
+   <li> Size: S,M,L,XL </li>
+   <li><span style="color:white;width:200px;background:orange;padding:3px;margin:4px"> Add to cart </span>
+
+<button style="color:White;font-size:20px; background:black">+</button> </li>
+</ol>
+
+</div>
+<div class="card">
+
+<h3 style="text-indent:0;text-align:center;background:#FFBC57; font-size:30px;padding:3px;box-shadow:10 px 10px 10px gray";>Blue off shoulder dress </h3>
+
+<img src="images/dress9.png"class="pic">
+
+<ol>
+   <li> Price: Rs 699  </li>
+   <li>Color: Blue  </li>
+   <li> Size: S,M,L,XL </li>
+   <li><span style="color:white;width:200px;background:orange;padding:3px;margin:4px"> Add to cart </span>
+
+<button style="color:White;font-size:20px; background:black">+</button> </li>
+</ol>
+
+</div>
+
+
+
 
 </body>
 
