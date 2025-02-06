@@ -3,42 +3,41 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-
 <head>
 <title> my profile </title> 
-  
-
-<div id="subheading">
-      
- <a href="mypractices.html">Practice </a>
-  <a href="https://www.behance.net/srishtibhandari1">                            
-   Behance
- </a>
-
- <a href="">Project 1 </a>
- <a href="">Project 2 </a>
-
-</div>
-
 
 <div id="topheader">
 
-     <img src="images/shishti.png" width="200"   
-      height="200"
+    <div id="subheading">
+      
+          <a href="mypractices.html">Practice </a>
+           <a
+  href="https://www.behance.net/srishtibhandari1">                                               
+          Behance
+       </a>
+
+      <a href="">Project 1 </a>
+      <a href="">Project 2 </a>
+
+   </div>
+
+   <p> Welcome to my Profile </p>
+
+    <img src="images/shishti.png" width="150"   
+      height="150"
      title="shrishti">
-    
-    <h1> SHRISHTI BHANDARI </h1>
 
-  </div>
+       <h1> SHRISHTI BHANDARI </h1>
 
-<div id="tophead">
-    <p> UI-UX Designer </p>
-</div>
+        <h2> UI-UX Designer</h2> 
+
+
+     </div>
+
+</head>
 
 <hr color="black"/>
 
-</head>
 
 <style>
 body
@@ -48,13 +47,25 @@ text-align:center;
 
 #topheader
 {
-width:50%;
+width:100%;
+height:480px;
 text-align:center;
-background:;
 margin:auto;
 font-size:18px;
 padding-top:20px;
+background-image:url(images/profilebg.jpg);
+background-size:cover;}
 }
+
+#topheader h1
+  {color:white;}
+
+#topheader p
+  {font-size:30px;}
+
+#topheader h2
+{font-size:25px;
+ color:gray;}
 
 
 #subheading
@@ -63,29 +74,23 @@ background:0A066A;
 width:40%;
 text-align:left;
 padding:25px;
-margin:left;
+margin:auto;
 font-size:25px;
-border:1px solid;
+border:4px solid;
 border-radius:30px;
-}
+color:white;}
+
 #subheading a
 
-{padding:30px;
- font-size:20px;}
+{padding:35px;
+ font-size:20px;
+ color:white;}
 
 #subheading a:hover
 {color:white;
  background:black;
 transform:scale(1.20);
-transition:0.5s;
-}
-
-#subheading a:visited
-{color:;}
-
-#subheading a:link
-{color:;}
-
+transition:0.5s;}
 
 #heading
 {
@@ -98,61 +103,163 @@ width:60%;
 margin:auto;
 font-size:20px;
  text-align:justify;}
-#top
-{
-width:50%;
-margin:auto;
-}
 
-#tophead
-{font-size:30px;
-  color:gray;}
+#work
+ {height:200px;
+ margin-top:0px;
+ background:;
+ width:70%;
+ margin:auto;}
 
+#work ul li
+  {margin-top:15px;
+  padding:20px;
+  width:15%;
+  cursor:pointer;
+  transition:0.5s;
+  margin-left:6px;
+  font-size:25px;
+  border:2px solid;
+  border-radius:30px;
+  list-style:none;
+  text-align:center;
+  color:black;
+  display:inline-block;}
 
 #footer
-  {background:black;
-   height:300px;
-   margin-top:8px;}
+  {background:#EBF1FA;
+   width:98%;
+   margin:auto;
+   height:250px;
+   margin-top:10px;}
+
+#footer h2
+  {font-size:20px;
+   color:gray;}
 
 
+#footer p
+  {font-size:15px;
+   color:gray;
+   margin-top:30px;}
+
+ 
+body
+  {background-image:url(images/.png);
+   background-attachment:fixed;}
 
 
-/* Extra small devices (phones, 600px and down)  */
 
 @media only screen and (max-width: 600px)
 
 {
+
+#topheader h1
+  {color:black;
+  font-size:20px;}
+
+#topheader p
+  {font-size:20px;}
+
+#topheader h2
+{font-size:18px;
+ color:gray;}
+
 #subheading
-{width:100%;}
-
-#heading
-{width:300px;
- margin:auto;}
-
-body{background:;}
+{
+background:0A066A
+width:15%;
+text-align:;
+padding:25px;
+margin:auto;
+font-size:20px;
+border:4px solid;
+border-radius:30px;
+color:white;}
+display:inline-block;}
 
 #subheading a
-{font-size:15px;
- padding:18px;}
 
+{padding:30px;
+ font-size:15px;
+ color:white;}
+
+#work
+ {height:200px;
+ margin-top:0px;
+ background:;
+ width:100%;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+
+#work ul li
+  {margin-top:10px;
+  padding:20px;
+  width:20%;
+  cursor:pointer;
+  margin-right:3px;
+  font-size:15px;
+  border:2px solid;
+  border-radius:30px;
+  list-style:none;
+  text-align:center;
+  color:black;
+  display:inline-block;}
+
+
 
 @media only screen and (min-width: 600px) 
 {
 body{background:;}
 #subheading
-{width:70%;}
+{width:40%;}
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px)
+{#subheading
 {
-body{background:;}
-#subheading
-{width:40%;}
+background:0A066A;
+width:40%;
+text-align:left;
+padding:25px;
+margin:auto;
+font-size:25px;
+border:4px solid;
+border-radius:30px;
+color:white;}
+
+#subheading a
+
+{padding:35px;
+ font-size:20px;
+ color:white;}
+
+#work
+ {height:200px;
+ margin-top:0px;
+ background:;
+ width:70%;
+ margin:auto;}
+
+#work ul li
+  {margin-top:15px;
+  padding:20px;
+  width:15%;
+  cursor:pointer;
+  transition:0.5s;
+  margin-left:6px;
+  font-size:25px;
+  border:2px solid;
+  border-radius:30px;
+  list-style:none;
+  text-align:center;
+  color:black;
+  display:inline-block;}
+
+
+
+   
 } 
 
 </style>
@@ -166,14 +273,30 @@ body{background:;}
 <div id="heading"
 
 <p>
-Hi!  am shrishti bhandari, i am 18 years old, a ui-ux designer student and also graphic designing student.I completed my school from CBSE Board in 2024,and currently pursuing my bachelor degree in Delhi University and diploma in Arena Animation.and i have a hobby of writing.i like to write some poems and quotes in my free time also two of them are published.i am a co-author in two books. 
+Hi! I am shrishti bhandari, i am 18 years old,basically from Uttrakhand and lives in  Delhi.A ui-ux designer student and also graphic designing student.I completed my school from CBSE Board in 2024,and currently pursuing my bachelor degree in Delhi University and diploma in Arena Animation.and i have a hobby of writing.i like to write some poems and quotes in my free time also two of them are published.i am a co-author in two books. 
 </p>
+<p> Currently Working on HTML practicals and also continuing skeching work I presented my work on my profile in my practice link.Hope you like it Thank You </p> 
+
+</div>
+
+<div id="work">
+  <h1> Working on </h1>
+      
+ <ul>
+  <li> HTML </li>
+  <li> Skeching </li> 
+  <li> Graphic </li>
+   
 
 </div>
 
 <div id="footer">
-
-
+ 
+ <h2> More Details </h2>
+ <p> Contact On </p>
+ <p> Google | Facebook | Instagram </p>
+<p> Instagram:triggered_srishti </p>  
+  
 </div>
 
 
