@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head> <title> Banner </title>
+
+<div id="menu">
+
+</div>
+
+</head>
+
+<style>
+ @keyframes change_pic
+ {
+  10%{background:url(images/cake1.png);background-repeat:np-repeat;background-size:100%;}
+  20%{background:url(images/cake2.png);background-repeat:np-repeat;background-size:100%;}
+  30%{background:url(images/cake3.png);background-repeat:np-repeat;background-size:100%;}
+  40%{background:url(images/cake4.png);background-repeat:np-repeat;background-size:100%;}
+  50%{background:url(images/cake5.png);background-repeat:np-repeat;background-size:100%;}
+ } 
+
+@keyframes runtext
+{
+ from{margin-left:-300px;}
+ to{margin-left:1500px;}
+}
+
+header
+{ 
+width:80%;
+display:block; 
+background:#FDE9EC;
+height:500px;
+box-shadow:10px 10px 10px gray;
+margin:auto;
+background-images:url(images/bot1.png);
+background-size:cover;
+background-repeat:no-repeat;
+animation:change_pic 22s infinite;
+}
+
+#runingtext
+{color:white;
+margin-left:-300px;
+width:200px;
+font-size:20px;
+font-family:Arial black;
+width:200px;
+animation:runtext 10s linear infinite alternate;
+}
+
+@media only screen and (min-width: 600px) 
+{
+header
+{ 
+width:40%;
+display:block; 
+background:#FDE9EC;
+height:00px;
+box-shadow:10px 10px 10px gray;
+margin:auto;
+background-images:url(images/bot1.png);
+background-size:cover;
+background-repeat:no-repeat;
+animation:change_pic 22s infinite;}
+
+}
+
+</style>
+
+<body>
+
+<header>
+  <div style="background:black; height:50px;">
+
+   <div id="runingtext">
+     <p> Bake My Day  </p> 
+   </div>
+
+  </div>
+
+
+</header>
+
+
+</body>
+
+</html>
+
