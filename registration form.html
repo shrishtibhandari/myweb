@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head> <title> Registration form </title>
+
+</head>
+
+<style>
+
+#container
+{
+width:50%;
+margin:auto;
+border:1px solid black;
+border-radius:20px;
+margin-top:10%;}
+
+#container caption
+{color:black;
+font-size:30px;
+background:white;
+width:40%;
+margin:auto;}
+
+
+#container label
+{font-size:20px;}
+
+#container table
+{width:100%;}
+
+body
+{text-align:center;
+background-image:url(images/formbg.jpg);
+background-size:cover;
+}
+
+input[type="text"]{width:100%; height:30px;}
+input[type="password"]{width:100%; height:30px;}
+
+
+</style>
+
+<body>
+
+<div id="container">
+<table border="0" cellspacing="20">
+
+<caption> Registration Form </caption>
+
+<form action="#" Method="post">
+
+<tr>
+<td> <label> User Id </label> </td> <td> <input required title="type Name here..."placeholder="type Name here"
+</tr>
+
+<tr>
+<td> <label> DOB </label> </td> <td> <input type="date"> </br> </td>
+</tr>
+
+<tr>
+<td> <label> Gender </label> </td>
+<td> 
+ Male  <input type="radio" value="Male" name="gender">
+Female <input type="radio" value="Female" name="gender">
+Other <input type="radio" value="Other" name="gender">
+</td>
+</tr>
+
+<tr>
+<td> <label> Hobby </label> </td>
+<td>
+Reading  <input type="checkbox" value="Reading">
+Writing  <input type="checkbox" value="Writing">
+Cooking  <input type="checkbox" value="Cooking">
+Painting  <input type="checkbox" value="Painting">
+</td>
+</tr>
+
+<tr>
+<td> <label> City </label> </td>
+<td>
+<select>
+<option value="Delhi">Delhi </option>
+<option value="Mumbai"> Mumbai </option>
+<option value="Chennai"> Chennai </option>
+<option value="Hyderabad">Hyderabad </option>
+<option value="Pune"> Pune </option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label> Message </label> </td>
+<td>
+<textarea rows="4" cols="50"> </textarea>
+</tr>
+
+<tr>
+<td> </td>
+<td> <input type="Submit" value="Register"> <input type="reset"></td>
+</td>
+</tr>
+
+
+
+
+</body>
+
+</html>
