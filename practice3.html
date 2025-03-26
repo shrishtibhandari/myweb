@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doreamon </title>
+</head>
+<style>
+
+
+p
+{width:50%;
+margin-left:30px;
+margin-top:30px;
+text-align:justify;
+color:gray;}
+
+</style>
+<body>
+ 
+<h1 id="heading"> Doreamon </h1>
+<h2 id="heading"> Doreamon theme page </h2>
+
+<img id="mypic" class="pic"src="images/doreamon1.png">
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<script>
+  
+   var h =document.getElementById ("heading")
+   var p =document.getElementById ("mypic")
+
+   p.style.transition="1.50s"
+   p.onclick = function()
+   {
+    this.src="images/doreamon2.png"
+   }
+   
+   p.onmouseout = function()
+   {
+    this.src="images/doreamon1.png"
+   }
+
+   h.style="background:#94EFF3; margin-left:650px;width:250px;text-shadow:5px 5px 5px gray; text-align:center;"
+
+   h.style.color ="blue"
+   h.style.transition = "0.50s"
+
+   h.onclick = function()
+   {
+    h.style.transform = "scale(2)"
+    this.style.width="300px"
+   }
+
+   h.onmouseover = function ()
+   {
+    h.style.cursor = "pointer"
+    h.style.color = "white"
+    this.style.background ="#42ADFF"
+    this.style.borderRadius ="100px"
+   }
+
+   h.onmouseout = function()
+   {
+   h.style.color = "blue"
+   h.style.transform ="scale(1)"
+   this.style.background ="#94EFF3"
+   this.style.transform ="scale(1)"
+   this.style.borderRadius ="0px"}
+</script>
+
+</body>
+</html>
