@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+ #box 
+ {
+    margin:auto;
+    width:26%;
+    height:280px;
+    box-shadow:10px 10px 10px gray;
+    overflow:hidden;
+    cursor:pointer; 
+ }
+
+ #tool #pp
+ {margin-left:70%;}
+
+ .pic
+ {width:110%;
+height:600px;
+transition:0.50s}
+
+
+</style>
+<body>
+    
+<h1> change pic </h1>
+<div id="box">
+   <img id="pic" src="images/pic1.png">
+   </div>
+  
+<div id="tool"> <button id="pp"> previous  </button> <button id="n"> Next </button></div>   
+
+<script>
+ var p = document.getElementById ("pic")
+ var pp = document.getElementById ("pp")
+ var n = document.getElementById ("n")
+ var c = 2
+
+ n.onclick = function()
+ {
+    if(c<5)
+     {
+     c=c+1 
+     }
+     else {
+            c=1
+          }
+
+  p.src="images/pic"+c+".png"        
+ }
+
+ pp.onclick = function()
+ {
+    if(c>1)
+     {
+     c=c-1 
+     }
+     else {
+            c=5
+          }
+
+  p.src="images/pic"+c+".png"        
+ }
+ 
+ p.onmouseover = function()
+ {
+   this.style.transform="scale(1.10)" 
+ }
+
+ p.onmouseout = function()
+ {
+    this.style.transform ="scale(1)"
+ }
+
+ p.onclick = function()
+ {
+    if(c<5)
+       {
+        c=c+1
+       }
+
+    else 
+    {
+      c=1     
+    }
+    document.title = c
+    p.src = "images/pic"+c+".png"    
+ }
+</script>
+
+</div>    
+</body>
+</html>
