@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{text-align:center;}
+
+ .pic
+ {width:20%;
+box-shadow:10px 10px 10px gray;
+margin:40px;
+transition:0.50s;}
+
+.pic:hover
+{transform:scale(1.15)}
+
+
+</style>
+<body>
+   
+  <h1> Image loop</h1>  
+<script>
+
+  for (var i=1; i<10;i++)
+{
+    var p ="images/pic"+i+".png"
+    document.write("<img src= "+p+" class='pic'>")
+
+}  
+</script>
+    
+</body>
+</html>
