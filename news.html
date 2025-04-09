@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #newstoday
+   {
+    background:#17145F;
+    color:white;
+    font-size:40px;
+    padding:20px;
+    text-align:center;
+   }
+
+   body
+   {background:;}
+
+</style>
+<body>
+    <div id="newstoday">
+        News 
+    </div>
+    <script>
+
+      var n = document.getElementById("newstoday")
+      var news = ["Ajay Devgn, Vaani Kapoor address her replacing Ileana D'Cruz in Raid 2","Himachal HC pulls up state for delaying pay hike to court staff","Stock market live updates: Sensex, Nifty in the red as Trump's 26% tariffs on India","Philippine Politician Offers To Sleep With Lonely, Singe Mothers In Campaign Speech,",]  
+      n.innerHTML = news[1]
+
+      var c = 0
+      function change_news ()
+      {
+        if(c<news.length-1)
+          { c++}
+
+          else
+          { c = 0}
+          n.innerHTML = news[c]
+          document.title = c 
+
+      }
+
+      setInterval ("change_news()",3000)
+      
+
+    </script>
+</body>
+</html>
