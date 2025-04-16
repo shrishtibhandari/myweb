@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>theme park</title>
+</head>
+<style>
+
+#header
+{background-image:url(images/disney28.png);
+background-size:cover;
+height:550px;}
+
+#header ul li
+{list-style:none;
+display:inline-block;
+font-size:18px;
+padding:20px;
+color:white;
+border:2px solid;
+border-radius:20px;
+margin-top:10px;}
+
+
+#header ul li:hover
+
+{background:white;
+transform:scale(1.10);
+transition:0.5s;
+color:black;
+cursor:pointer;}
+
+#header ul li a
+{color:white;
+text-decoration:none;}
+
+#header ul li a:hover
+{color:black;
+}
+
+#header p
+{text-align:center;
+color:white;
+font-size:45px;}
+
+#head
+{width:20%;
+height:25px;}
+
+#text p
+{text-align:center;
+color:white;
+font-size:40px;
+margin-top:120px;}
+
+.content
+{background:;
+margin-left:20px;
+margin-top:30px;
+width:27%;
+height:250px;}
+
+#main
+{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-around;}
+
+.content
+{
+margin-left:20px;
+margin-top:150px;
+width:27%;
+height:250px;}
+
+#content
+{margin-left:20px;
+margin-top:150px;
+width:27%;
+height:250px;}
+
+#top
+{width:50%;
+margin:auto;}
+
+#top h1
+{text-align:center;
+margin-top:40px;}
+
+#top p
+{text-align:justify;
+color:gray;
+font-size:20px;
+}
+
+#myvideo
+{
+width:52%;
+height:600px;
+margin-top:40px;
+background:;}
+
+#text2 p
+{color: gray;
+text-align:justify;
+margin-top:25px;
+font-size:18px;}
+
+#text2
+{width:40%;
+height:200px;
+margin-top:40px;}
+
+#text2 h1
+{margin-top:100px;}
+
+#center
+{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-around;}
+
+.photo
+{padding:30px;
+margin-left:100px;
+margin-top:30px;
+height:300px;
+width:500px;}
+
+#bye
+ {background:;
+width:12%;
+margin-left:640px;} 
+
+#end h1
+{margin-left:50px;
+font-size:40px;}
+
+#end
+{background:#E5E5E5;
+height:550px;}
+
+#end p
+{font-size:25px;
+text-align:center;
+color:black;}
+
+footer
+{background:#F4F3F3;
+height:380px;}
+
+#foot ol  li 
+{list-style:none;
+display:inline-block;
+font-size:18px;
+padding:30px;
+color:black;
+margin-top:10px;
+margin-left:30px;}
+
+#foot ol li a
+{color:black;
+text-decoration:none;}
+
+#foot
+{background:;
+width:40%;
+margin:auto;}
+
+#foot p
+{font-size:20px;
+text-align:center;
+color:black;}
+
+.wow
+{height:30px;
+width:30px;
+padding:20px;
+background;}
+
+#wow
+{margin-left:600px;}
+
+@media only screen and (max-width: 600px)
+{
+  #header
+{width:100%;
+height:550px;}
+
+#header ul li
+{
+font-size:15px;
+padding:18px;
+}
+
+#header p
+{text-align:center;
+color:white;
+font-size:35px;}
+
+#text p
+{font-size:23px;}
+
+.content
+{
+margin-left:0px;
+margin-top:20px;
+width:100%;
+height:250px;}
+
+#content
+{margin-left:0px;
+margin-top:230px;
+width:100%;
+height:250px;}
+
+#top
+{width:90%;
+margin:auto;}
+
+#top h1
+{font-size:30px;
+margin-top:35px;
+}
+
+#top p
+{text-align:justify;
+color:gray;
+font-size:20px;
+}
+
+#myvideo
+{
+width:100%;
+margin-top:-150px;
+background:;}
+
+#text2 p
+{color: gray;
+text-align:justify;
+margin-top:0px;
+font-size:18px;}
+
+#text2
+{width:90%;
+height:200px;
+margin-top:0px;}
+
+#text2 h1
+{margin-top:-120px;}
+
+#end h1
+{margin-left:20px;
+font-size:30px;}
+
+#end
+{height:400px;
+margin-top:80px;}
+
+#end p
+{font-size:25px;
+text-align:center;
+color:black;}
+
+.photo
+{padding:0px;
+margin-left:0px;
+margin-top:20px;
+height:200px;
+width:220px;}
+
+footer
+{background:#F4F3F3;
+height:550px;
+margin-top:10px;}
+
+#foot ul  li 
+{
+font: size:20px;
+padding:10px;
+color:black;
+margin-top:10px;
+margin-left:20px;}
+
+#foot
+{background:;
+width:60%;
+margin:auto;
+}
+
+#foot p
+{font-size:20px;
+text-align:center;
+color:black;}
+
+.wow
+{height:30px;
+width:30px;
+padding:20px;
+background;}
+
+#wow
+{margin-left:70px;}
+
+#bye
+ {background:;
+width:50%;
+margin-left:130px;
+margin-bottom:10px;} 
+
+
+}
+
+
+
+</style>
+<body>
+
+  <div id="header">
+
+    <div id="head">
+    <img src="images/disney2.png">
+    </div>
+    
+    <ul>
+      <li> <a href="index.html"> Home </a> </li>
+      <li> <a href="movies.html">Movies </a> </li>
+      <li> <a href="explore.html">Explore </a> </li>
+    </ul>
+    
+    <p> From Fairy Tales to Thrills </p>
+    
+    <div id="text">
+     <p>  Disney Theme Park </p>
+    </div>
+
+    <div id="main">
+
+      <img id="content" src="images/disney29.png">
+      <img class="content" src="images/disney30.png">
+      <img class="content" src="images/disney31.png">
+      
+    </div>
+     
+    <div id="top">
+      <h1>The Enchanted World of Disney"</h1>
+      <p>Step into a world where magic knows no bounds and every corner is filled with adventure, wonder, and enchantment. At Disney Parks, dreams come to life in the most spectacular way, offering unforgettable experiences for guests of all ages. Whether you're embarking on thrilling rides, meeting beloved characters.discovering hidden wonders, there's a story waiting for you at every turn. It's a place where fantasy becomes reality, and every moment is filled with the magic of Disney</p>
+
+    </div>
+
+    <div id="center">
+      <video id="myvideo" autoplay loop muted>
+         
+          <source src="videos/disneyvideo2.mp4" type="video/mp4">
+      
+      Your browser does not support the video tag.
+      </video>
+      <div id="text2">
+        <h1>The Magic Kingdom Awaits</h1>
+    
+        <p>Disney's upcoming movies are set to continue its tradition of blending timeless magic with fresh, captivating storytelling. The much-awaited live-action adaptations, like The Little Mermaid and Snow White, promise to bring new life to these beloved classics with stunning visuals and reimagined narratives.  </p>
+        <p>the continuation of fan-favorite franchises such as Frozen 3 and Inside Out 2 is sure to resonate with audiences, offering new adventures and emotional depth. Disney is also expanding its horizons with exciting original films like Raya and the Last Dragon and the Haunted Mansion adaptation, each bringing unique worlds and characters to the screen. With heartwarming tales, epic adventures, and unforgettable songs,</p>
+    
+        </div>
+      </div>
+
+      <div id="end">
+
+        <h1> <i> Explore theme parks </i></h1>
+        <img class="photo" src="images/disney32.png">
+        <img class="photo" src="images/disney33.png">
+      
+       <p> In Disney, the magic of childhood never fades, and dreams grow as big as the stars.</p>
+      </div> 
+      
+      <footer>
+        <div id="bye">
+       <img src="images/disney18.png">
+       </div> 
+       <div id="foot">
+       <ol>
+         <li> <a href="movies.html"> Movies </a> </li>
+         <li> <a href="theme park.html">Theme park </a> </li>
+         <li> <a href="explore.html">Explore </a> </li>
+       </ol>
+       <p> Explore with Disney</p>
+       </div>
+        <div id="wow">
+       <img class="wow" src="images/instagram.png">
+       <img class="wow" src="images/facebook.png">
+       <img class="wow" src="images/google.png">
+       <img class="wow" src="images/youtube.png">
+     </div>
+     </footer>
+
+       
+  
+</body>
+</html>
