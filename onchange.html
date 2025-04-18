@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+#container
+  {
+    width:550px;
+    padding: 20px;
+    background:black;
+    color:white;
+    transition:2s;
+    opacity:0;
+    border-radius:30px;
+  }
+
+
+  #micon
+  {
+    cursor:pointer
+  }  
+  #text
+  {width:50%;
+  text-align:justify;
+ margin:auto;
+padding:5px;}
+
+  
+</style>
+<body>
+    <div id="micon">
+      🔵
+    </div>
+    <div id="container">
+      backgroundColor
+      <input type="color" id="mycolor">
+      Text color 
+      <input type="color" id="mycolor2">
+      Font-size <input value="15" type="range" id="r1" min="15" max="50"><span id="n"> </span>
+    </div>
+    <hr />
+    <h1 style="text-align:center;"> About </h1>
+    <div id="text">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, atque illo! Ea assumenda nisi quidem eius rem. Excepturi minima suscipit corporis? Officiis voluptatum eos soluta, animi aut praesentium nulla necessitatibus.
+        Repudiandae cupiditate aliquam, ipsa nam libero maiores blanditiis veritatis numquam aliquid corrupti voluptatem enim omnis, impedit, sequi nulla repellat recusandae quaerat voluptate delectus vero nisi obcaecati quos! Officia, nam adipisci?
+        Quia itaque illum ea. Dolorem at debitis maxime? Perferendis accusantium reiciendis accusamus necessitatibus ut quisquam quam fugit. Ea unde ipsam odio maxime sit dolore. Expedita fugiat minus modi numquam sequi?
+        Saepe, odit nobis. Sint placeat, architecto hic temporibus odio dicta pariatur? Hic doloribus quia veritatis. Provident molestiae, placeat id et obcaecati incidunt omnis inventore laborum corrupti in, perferendis rem ipsa.
+        Repellendus illo minima blanditiis perferendis nesciunt, provident, magnam veritatis pariatur iure dolorem impedit hic? Ut unde quae ad quas maxime labore ducimus, itaque dolore praesentium sunt blanditiis perferendis! Quas, fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, atque illo! Ea assumenda nisi quidem eius rem. Excepturi minima suscipit corporis? Officiis voluptatum eos soluta, animi aut praesentium nulla necessitatibus.
+        Repudiandae cupiditate aliquam, ipsa nam libero maiores blanditiis veritatis numquam aliquid corrupti voluptatem enim omnis, impedit, sequi nulla repellat recusandae quaerat voluptate delectus vero nisi obcaecati quos! Officia, nam adipisci?
+        Quia itaque illum ea. Dolorem at debitis maxime? Perferendis accusantium reiciendis accusamus necessitatibus ut quisquam quam fugit. Ea unde ipsam odio maxime sit dolore. Expedita fugiat minus modi numquam sequi?
+        Saepe, odit nobis. Sint placeat, architecto hic temporibus odio dicta pariatur? Hic doloribus quia veritatis. Provident molestiae, placeat id et obcaecati incidunt omnis inventore laborum corrupti in, perferendis rem ipsa.
+        Repellendus illo minima blanditiis perferendis nesciunt, provident, magnam veritatis pariatur iure dolorem impedit hic? Ut unde quae ad quas maxime labore ducimus, itaque dolore praesentium sunt blanditiis perferendis! Quas, fuga. 
+    
+    </div>
+    <script>
+      const container = document.getElementById("container")
+      const c = document.getElementById("mycolor")
+      const c2 = document.getElementById("mycolor2") 
+      const t = document.getElementById("text") 
+      const r1 = document.getElementById("r1")
+      const n = document.getElementById("n")
+      const micon = document.getElementById("micon")
+
+      var toolbaropen = false
+      micon.onclick = function()
+      {
+          if (toolbaropen)
+             { 
+                toolbaropen = false 
+                 container.style.opacity = "0"
+                 document.title = toolbaropen
+             }
+          else
+           {
+        toolbaropen = true 
+          container.style.opacity="1"
+          document.title = toolbaropen
+           }   
+      }
+
+      r1.onchange = function()
+      {
+        t.style.fontSize= this.value+"px"
+        n.innerHTML= "<b>"+this.value+"</b>"
+      } 
+
+      c.onchange=function()
+      {
+      document.body.style.background = c.value
+      }
+    c2.onchange = function()
+    {
+        t.style.color=c2.value
+    }
+    </script>
+</body>
+</html>
