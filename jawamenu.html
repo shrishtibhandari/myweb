@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    #menu, ol li
+
+    {
+        cursor:pointer;
+        transition:1s;
+        background:#233A57;
+        width:200px;
+        list-style:none ;
+        color:white;
+        text-align:center;
+        padding:15px;
+    }
+
+    #subtea,#m1 a
+    {text-decoration: none;}
+
+     ol li:hover
+    {
+        background:#9AB9E0;
+    }
+
+
+    </style>
+<body>
+    <div id="menu" style="color:rgb(244,249,244)"> Menu </div>
+    <ol id="m1">
+      <li> Home</li>
+<li id="tea"> HTML </li></a>
+           <ul id="subtea">
+            
+                <a href="photogallery.html">
+                <li> Photogallery </li> </a>
+                
+                <a href="div.html">
+                <li> Amazon </li> </a>
+                
+                <a href="bookmark.html">
+                <li> Bookmark </li> </a>
+                
+                <a href="table.html">
+                <li> Table </li> </a>
+                
+                <a href="form.html">
+                <li> Login Form </li> </a>
+                
+                <a href="slider.html">
+                <li> Slider Banner </li> </a>
+                
+                <a href="banner.html">
+                <li> Animation Banner </li> </a>
+                
+                <a href="video.html">
+                <li> video  </li> </a>
+                
+                <a href="Registration form.html">
+                <li> Registration form </li> </a>
+                
+
+           </ul>
+
+      <li> Jawacript </li> 
+     <li> Behance</li>
+      
+    </ol>
+
+    <script>
+       var menu = document.getElementById("menu") 
+       var m1 = document.getElementById("m1") 
+       var tea = document.getElementById("tea") 
+       var subtea = document.getElementById("subtea") 
+       var ismenuopen = "no"
+       var isteaopen= "no"
+
+       subtea.style.display="none"
+       m1.style.display="none"
+       subtea.style.marginLeft="190px"
+       subtea.style.marginTop="-40px"
+       menu.onclick = function()
+       {
+        isteaopen="no"
+        if(ismenuopen=="no")
+            {
+                 m1.style.display="block"
+                 subtea.style.display="none"
+                 ismenuopen="yes"
+             }
+          else
+          {
+            m1.style.display="none"
+            ismenuopen="no"
+          }
+
+          tea.onclick =function()
+          {
+            if(isteaopen=="no")
+             {
+                subtea.style.display = "block"
+                isteaopen="yes"
+
+             }
+             
+             else
+             {
+                subtea.style.display="none"
+                isteaopen="no"
+
+             }
+          }
+       }
+
+    
+
+      
+
+    </script>
+</body>
+</html>
