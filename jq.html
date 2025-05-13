@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+
+<style>
+    #top
+    {
+        width:70%;
+        margin:auto;
+
+    }
+
+    .box
+    {
+        text-align:justify;
+    
+    
+    }
+
+    #adsub,#horrorsub,#fightsub,#racesub
+    {
+       padding:20px;
+       cursor:pointer;
+       text-align:center;
+       color:white;
+       font-size:20px;
+       text-align: justify;
+      
+       
+
+    }
+    #about,#horror,#Fighting, #Racing
+    {
+        cursor:pointer;
+        color:rgb(12, 12, 86);
+        text-align:center;
+        margin-top:50px;
+    }
+
+    #about:hover
+    {
+        background:rgb(38, 38, 94);
+        color:white;
+        transition: 1s;
+       
+    }
+
+    #horror:hover
+    {
+        background:rgb(38, 38, 94);
+        color:white;
+        transition: 1s;
+    }
+
+    #Fighting:hover
+    {
+        background:rgb(38, 38, 94);
+        color:white;
+        transition: 1s;
+    }
+
+    #Racing:hover
+    {
+        background:rgb(38, 38, 94);
+        color:white;
+        transition: 1s;
+    }
+    
+    body
+    {
+        background-image: url(images/photo.jpg);
+        background-size: cover;
+    }
+</style>
+<body>
+    
+<script>
+
+$(document).ready(function()
+{
+    $("#adsub").slideToggle()
+    $("#horrorsub").slideUp()
+    $("#fightsub").slideUp()
+    $("#racesub").slideUp()
+
+    $("#about").click(function()
+      {
+        
+    $("#adsub").slideToggle(500)
+    $("#horrorsub").slideUp(500)
+    $("#fightsub").slideUp(500)
+    $("#racesub").slideUp(500)
+      }
+    )
+
+    $("#horror").click(function()
+      {
+        
+    $("#horrorsub").slideToggle(500)
+    $("#adsub").slideUp(500)
+    $("#fightsub").slideUp(500)
+    $("#racesub").slideUp(500)
+      }
+    )
+ 
+    $("#Fighting").click(function()
+      {
+        
+    $("#fightsub").slideToggle(500)
+    $("#horrorsub").slideUp(500)
+    $("#adsub").slideUp(500)
+    $("#racesub").slideUp(500)
+      }
+    )
+
+    $("#Racing").click(function()
+      {
+        
+    $("#racesub").slideToggle(500)
+    $("#horrorsub").slideUp(500)
+    $("#adsub").slideUp(500)
+    $("#fightsub").slideUp(500)
+      }
+    )
+    
+}
+
+)    
+</script>    
+ <div id="top">
+    <h1 style="text-align:center;font-size:40px;background: rgb(7, 7, 60);width:30%;
+    margin:auto;color:white;"> Games </h1>
+     <div class="box">
+        <h1 id="about"> Adventure </h1>
+        <p id="adsub"> 
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        </p>
+
+        <div class="box">
+            <h1 id="horror"> Horror </h1>
+            <p id="horrorsub"> 
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+     
+
+            <div class="box">
+                <h1 id="Fighting"> Fighting </h1>
+                <p id="fightsub"> 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. 
+         </p>       
+
+         <div class="box">
+           <h1 id="Racing"> Racing  </h1>
+           <p id="racesub"> 
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quaerat ea, at deleniti, hic eaque cumque repudiandae labore voluptatum minima nemo vero. Saepe explicabo nobis, temporibus suscipit quas molestiae sequ.iLorem ipsum dolor sit, amet consectetur adipisicing elit. 
+    </p>  
+
+     </div>
+ 
+
+
+ </div>   
+</body>
+</html>
