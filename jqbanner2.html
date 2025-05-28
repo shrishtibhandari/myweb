@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-tilelayer-geojson/1.0.2/TileLayer.GeoJSON.min.js"></script>
+
+
+</head>
+<style>
+    .pic
+    {
+        width:100%;
+        height:600px;
+
+    }
+
+    #main
+    {
+        width:80%;
+        height:650px;
+        margin:auto;
+        background: black;
+        text-align: center;
+        color: aliceblue;
+    }
+
+    #main img
+    {
+        margin:auto;
+        text-align: center;
+    }
+
+    #prev,#next
+    {
+        font-size:20px;
+        text-align:center;
+        text-decoration: none;
+        padding:30px;
+        color: white;
+    }
+
+    
+</style>
+<body>
+    <div id="main">
+
+    <div class="cycle-slideshow"
+    data-cycle-fx="scrollHorz"
+    data-cycle-timeout="4000"
+    data-cycle-caption="#adv-custom-caption"
+    data-cycle-caption-template="Slide {{slideNum}}: {{cycleTitle}}"
+    data-cycle-prev="#prev"
+    data-cycle-next="#next"
+    >
+    <img src="images/p1.jpg" class="pic" data-cycle-title="Cloudy Mountains">
+    <img src="images/p2.jpg" class="pic"data-cycle-title="Lake">
+    <img src="images/p3.jpg" class="pic"data-cycle-title="Snow Mountain">
+    <img src="images/p4.jpg" class="pic"data-cycle-title="Forest">
+</div>
+
+<div class="center">
+    <a href=# id="prev">Previous</a> 
+    <a href=# id="next">Next</a>
+    <div id="adv-custom-caption" class="center"></div>
+</div>
+
+    </div>
+    
+</body>
+</html>
