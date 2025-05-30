@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>Document</title>
+</head>
+<style>
+   
+ #box
+ {
+    font-size:30px;
+    background:rgb(140, 72, 72);
+    font-family:cursive;
+    color:white;
+    padding:20px;
+    display: inline-block;
+    left:-500px;
+    top:0px;
+ }   
+ 
+</style>
+<body>
+  <div id="box"> Chocolate Pastry </div> 
+<script>
+   
+$(document).ready(function()
+   {
+     $("#box").animate({left:"300px"},1000).delay(1000).animate({top:"+=150px"},500).delay(1000).animate({fontSize:"+=40px"},500).delay(500);
+   
+     $("#box").animate({borderRadius:"60px",padding:"+=20px"},"500", mycolor); 
+
+   }) 
+   
+   function mycolor()
+   {
+    r=Math.round(Math.random()*255)
+    g=Math.round(Math.random()*255)
+    b=Math.round(Math.random()*255)
+    c=`rgb(${r},${g},${b})`
+    this.style.background = c
+  
+   }
+</script>
+
+</body>
+</html>
