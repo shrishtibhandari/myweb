@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<style>
+  body
+ {
+  background: rgb(218, 232, 253);
+ }
+  nav ol
+{
+list-style:none;
+border-radius: 20px;
+}
+
+
+#icon
+{
+
+display:inline-block;
+width:100px;
+padding:2px;
+}
+
+nav #icon ol li 
+{
+transition:0.50s;
+margin-left:-300px;
+padding:15px;
+list-style:none;
+background:#04130f;
+width:200px;
+height:90px;
+font-size: 25px;
+text-align:center;
+border-radius: 20px;
+box-shadow:10px 10px 10px gray;
+border-bottom:1px solid black;
+cursor:pointer;
+margin-top:-15px;
+
+}
+
+nav #icon
+{
+height:100px;
+overflow:hidden;
+
+}
+
+nav #icon:hover
+{
+overflow:visible;
+
+}
+
+nav a
+{
+  text-decoration: none;
+}
+nav #icon:hover ol li 
+{ 
+transition:0.75s;
+margin-left:-40px;
+}
+
+a:link{color:white;}
+a:visited{color:white;}
+
+nav #icon ol li:hover
+ {
+background:#7ee6fa;
+} 
+
+#top h1
+{
+color:rgb(29, 29, 149);
+font-size: 45px;
+margin-left: 100px;
+}
+
+.pic
+
+{
+height:230px;
+width:27%;
+padding:20px;
+transition:0.50s;
+margin: auto;
+margin-left: 60px;
+margin-top:50px;
+
+}
+
+.pic:hover
+
+{
+cursor:pointer;
+box-shadow: 5px 10 px 30px gray;
+transform:scale(1.10);
+border-radius:50px;
+}
+.box
+{
+  width:90%;
+  margin: auto;
+
+}
+
+
+@media only screen and (max-width: 600px)
+
+{
+.pic
+
+{
+width:90%;
+margin-left:18px;
+}
+
+
+}
+</style>
+<body>
+  <div class="container-fluid">
+    <div class="row"> 
+      <div class="col-6 col-sm-4">
+        
+  <nav>
+
+<div id="icon"><img src="images/menu.png">
+
+
+<ol>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="mypractices.html">Html</a></li>
+<li><a href="jawasciptpractice.html">Jawascript</a></li>
+<li><a href="jqpractice.html">jquery</a></li>
+<li><a href="bootpractice.html">Bootstrap</a></li>
+
+</ol>
+
+
+</div>
+</nav>
+</div>
+   <div id="top"class="col-6 col-sm-8">
+    <h1 class="animate__animated animate__fadeInLeft"> Projects </h1>
+   </div>
+
+</div>
+</div>
+
+<div class="box">
+
+
+  <a href="botanicalgarden.html">
+<img src="images/g1.png" class="pic"></a>
+
+
+
+<a href="disney.html">
+<img src="images/g2.png" class="pic"></a>
+
+
+
+
+<a href="racing.html">
+<img src="images/g3.png" class="pic"></a>
+
+</div>
+
+</body>
+</html>
