@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+     
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<style>
+    body
+ {
+  background: rgb(241, 237, 237);
+ }
+    #top
+  {
+  height:460px;
+  width:100%;
+  text-align: center;
+  }
+
+  #order
+ {
+  text-decoration: none;
+  color:black;
+  text-align:center;
+  border:2px solid white;
+  font-size:24px;
+  border-radius:30px;
+  width:30%;
+  display: inline-block;
+  padding:4px;
+  margin: auto;
+  cursor:pointer;
+  margin-top:50px;
+  transition:0.3s;
+ }
+  
+#order:hover
+ {
+    background:rgb(142, 216, 245); 
+    border-color: aliceblue;
+ }
+
+#content
+{
+   height:420px;
+   border:2px solid #0077B6;
+   border-radius:20px;
+   width:100%;
+   margin:auto; 
+   margin-top:50px;
+   
+}
+
+#content p
+{
+  color:gray;
+}
+
+#content ul li
+{
+  color:#0077B6;
+  font-size:17px;
+}
+#content h2
+{
+  color:#184055;
+}
+.photo2
+{
+  transition: 1s;
+  margin-top:40px;
+  border-radius: 10px;
+}
+.photo2:hover
+{
+transform: scale(1);
+box-shadow: 10px 10px 10px gray;
+}
+
+#promise
+{
+    width:90%;
+    height:550px;
+    border-radius: 20px;
+    margin:auto;
+    background:#daeaf3;
+    padding:20px;
+    cursor: pointer;
+    margin-top:40px;
+
+}
+
+#promise ul li
+{
+    list-style: none;
+    color:#0077B6;
+}
+
+#cart
+ {
+  width:80%;
+  margin: auto;
+ }
+ .box
+    {
+        border-radius: 10px;
+        border:1px solid rgb(210, 235, 249);
+        width:100%;
+        height:120px;
+        margin-top:50px;
+        background: rgb(198, 233, 253);
+        cursor: pointer;
+        margin-left:0px;
+         transition: 0.5s;  
+        
+    }
+
+  .box:hover
+  {
+box-shadow: 5px 5px 5px gray;
+transform:scale(1);
+
+  }
+    .box h5
+    {
+      margin-top:20px;
+      text-align: center;
+    }
+
+   .box p
+   {
+    text-align: center;
+    margin-top: 30px;
+    color:rgb(116, 114, 114);
+   } 
+
+footer
+    {
+      background: rgb(111, 156, 203);
+      height:710px;
+      margin-top: 50px;
+    }
+
+    #text
+    {
+      width:100%;
+    }
+
+    
+    .p :hover
+    {
+      color:blue;
+    }
+
+@media only screen and (min-width: 1200px) 
+{
+
+#content
+  {
+   width:85%; 
+   height:400px;    
+  }
+
+  #promise
+{
+    width:50%;
+    height:370px;
+}
+
+#pic
+{
+    margin-top:40px;
+}
+
+.box
+{
+    margin-left:140px;
+}
+
+#p
+{
+  width:40%;
+}
+
+
+ footer 
+{
+height:350px;
+}  
+
+}
+</style>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <img src="images/logo.jpg">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item fs-5">
+          <a class="nav-link active" aria-current="page" href="easyghar.html">🏠Home</a>
+        </li>
+
+       
+           <li class="nav-item fs-5">
+          <a class="nav-link active" aria-current="page" href="helper.html">📝Servics</a></li>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="#">📖About us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="Review.html">💬Reviews</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control w-30 fs-5 me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <div class="container" style="background: rgb(212, 241, 250);margin-top: 20px;width:100%; height:370px;border-radius:20px;">
+  
+   <div class="row">
+     
+    <div class="col-lg-6 mx-auto">
+     
+ 
+       <div id="top">
+        <h1 class="animate__animated animate__fadeInDown"> EasyGhar🏠 </h1>
+     <p style="text-align:center;width:60%;margin:auto;color:rgb(0, 0, 0);font-size:20px;margin-top: 50px;">We connect homes with trusted, trained helpers because every family deserves reliable support</p>
+
+    <h2 style="margin: auto;
+    color:rgb(0, 0, 0);margin-top:30px;">About Us </h2>
+
+   <a href="helper.html" id="order"> Hire Now </a>
+ 
+    </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col"> 
+    
+     <div id="content">
+      <h2 class="animate__animated animate__fadeInDown"style="text-align:center;">📋About Us</h2>
+
+       <ul style="cursor: pointer;list-style:none;">
+
+        <li style="margin-top:30px;">At EasyGhar,</li>
+        
+         <p> we believe every household deserves compassionate, dependable, and professional support.Build comfort and routine with someone who understands your needs</p>
+
+         <li>Founded with a vision of simplifying daily living, </li> 
+
+         <p>we connect you with background‑verified and skilled helpers for every needFrom cleaning and cooking to elderly care—tailor tasks to fit your routine.</p>
+       
+         <li>whether it's cleaning, caregiving, cooking, or specialized tasks.</li>
+         <p>From everyday cleaning and cooking to elder care, babysitting, and more—we’ve got your household needs covered</p>
+      </ul>
+   </div>
+    </div>
+   
+
+    <div class="col">
+
+         <div id="pic">
+           <img class="photo2"src="images/h14.jpg">
+         </div>  
+
+    </div>
+ </div>
+</div>
+
+
+<h1 class="animate__animated animate__fadeInDown" style="font-size:35px;text-align: center;margin-top:40px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">🌟 Our Promise</h1>
+
+<p style="width:40%;color:gray;text-align:center;margin: auto;font-size:17px;">We promise to connect you with trusted, verified helpers who show up on time  </p>
+
+<div id="promise">
+
+<ul>
+    <li>🤝Trust & Consistency</li>
+    <p>We match you with the same dedicated helper based on your preferences and familiarity, building a routine connection provided with every booking.</p>
+
+
+    <li>⏱️Flexible, Tailored Support</li>
+    <p>From one‑day to part‑time or weekly commitments, our adaptable scheduling ensures you hire help only when needed—no long‑term obligation.</p>
+
+    <li>🧽Custom Tasks to Suit Your Home</li>
+    <p>Whether you need light housekeeping, diet-based cooking, elderly care, or child support, you decide what —we’ll provide the right help for it.</p>
+
+    <li>✅ Verified & Skilled Professionals</li>
+    <p>Our team is comprised of background‑checked professionals trained in cleaning, cooking, and caregiving. We uphold high standards of safety, hygiene, and service.
+
+
+</p>
+</ul>
+
+</div>
+
+<h1 class="animate__animated animate__fadeInDown" style="font-size:30px;text-align: center;margin-top:40px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">🤝 What We Offer</h1>
+
+<p style="width:40%;color:gray;text-align:center;margin: auto;font-size:17px;">trained househelpers for cleaning, cooking, caregiving and more.</p>
+
+<div id="container">
+  <div id="cart">
+    <div class="row">
+ 
+<div class=" col-lg-3">
+
+    <div class="box">
+ 
+   <h5>✅ Trusted House Helpers</h5>
+  <p >Background-checked and trained staff</p>
+  
+    </div>
+</div>
+
+
+<div class="col-lg-3">
+
+    <div class="box">
+ 
+   <h5>✅ Flexible Plans </h5>
+   <p >Hire for a day, a week, or monthly </p>
+   
+     </div>
+ </div>    
+
+ <div class="col-lg-3 sm-6">
+    <div class="box">
+ 
+  <h5>✅ Multiple Services </h5>
+  <p>Cleaning, cooking, babysitting, elderly care</p>
+   </div>
+ </div>
+ 
+ 
+</div>
+</div>
+</div>
+
+<h1 class="animate__animated animate__fadeInDown" style="font-size:30px;text-align: center;margin-top:40px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:rgb(49, 49, 130)">💡 Our Mission</h1>
+
+<p id="p"style="text-align: center;margin: auto;margin-top:30px;color:gray;">To make reliable, respectful, and professional home help accessible to every household by connecting them with trained and background-verified helpers.</p>
+
+
+<footer>
+
+<h3 style="font-size:35px;color:white;text-align: center;cursor: pointer;">🏠EasyGhar </h3>
+
+<div id="container">
+   <div id="text">
+  <div class="row">
+     
+    <div class="col">
+     
+       <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:100px;cursor: pointer;">
+       🔗 QUICK LINKS
+       <li>- About Us</li>
+       <li>- Our Services</li>
+       <li>- Book a Helper</li>
+       <li>- Pricing</li>
+       <li>- Contact Us</li>
+      </ul> 
+       
+   </div>
+
+  <div class="col"> 
+      <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:60px;cursor: pointer;">
+      🔒 TRUST & SAFETY
+      <li>- 100% Background-Verified Helpers</li>
+      <li>- Our Services</li>
+      <li>- Book a Helper</li>
+      <li>- Pricing</li>
+      <li>- Contact Us</li>
+      </ul>
+</div>
+
+<div class="col">     
+     <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:50px;cursor: pointer;">
+    📍 LOCATIONS WE SERVE
+    <li>Delhi NCR | Mumbai | Bengaluru </li>
+    <li> Pune | Hyderabad | Chennai | Kolkata </li>
+    </ul>
+</div>
+
+<div class="col">
+    <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:20px;cursor: pointer;">
+    📞 CUSTOMER SUPPORT
+    <p>Need assistance? We’re here to help.</p>
+   <li>📱 Phone: +91-XXXXXXXXXX</li>
+   <li>📧 Email: support@EasyGhar.in  </li>
+   <li>🕐 Hours: 9:00 AM – 9:00 PM | Monday to Sunday</li>
+    </ul>
+</div>
+
+
+   <p style="color:white;text-align: center;cursor: pointer;"> 2025 EasyGhar Pvt. Ltd. </p>
+    
+    <p style="color:white;text-align: center;cursor:pointer ;"> All Rights Reserved  
+   Privacy Policy | Terms & Conditions | Sitemap</p>
+
+    </div>
+
+   </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+</html>

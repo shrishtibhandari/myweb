@@ -1,308 +1,529 @@
-<!doctype html>
-
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index </title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
 <style>
 
-  nav ol
+#wow
 {
-list-style:none;
-border-radius: 20px;
+  height:300px;
 }
-
-
-#icon
+.box 
 {
-
-display:inline-block;
-width:100px;
-padding:2px;
+  width:90%;
+  background: red;
+  margin-top: 40px;;
 }
-
-nav #icon ol li 
-{
-transition:0.50s;
-margin-left:-300px;
-padding:15px;
-list-style:none;
-background:#04130f;
-width:200px;
-height:90px;
-font-size: 25px;
-text-align:center;
-border-radius: 20px;
-box-shadow:10px 10px 10px gray;
-border-bottom:1px solid black;
-cursor:pointer;
-margin-top:-15px;
-
-}
-
-nav #icon
-{
-height:100px;
-overflow:hidden;
-
-}
-
-nav #icon:hover
-{
-overflow:visible;
-
-}
-
-nav a
-{
-  text-decoration: none;
-}
-nav #icon:hover ol li 
-{ 
-transition:0.75s;
-margin-left:-40px;
-}
-
-a:link{color:white;}
-a:visited{color:white;}
-
-nav #icon ol li:hover
- {
-background:#7ee6fa;
-}
-  #top
-  {
-    background: rgb(233, 240, 251);
-    height:700px;
-    width:134%;
-   margin-left:-160px;
-  
-  }
-
-  body
-  {
-    background: rgb(233, 240, 251);
-  }
-#pic
-{
-  width:400px;
-  margin-left:40px;
-  margin-top: 0px;
-}
-
-#main
-{
-  display: flex;
-}
-
-#top h1
-{
-  margin-top: 140px;
-  margin-left: 200px;
-}
-
-#top h4
-{
-  margin-top: -100px;
-  margin-left: 200px;
-}
-
-#top h5
-{
-  margin-top: 30px;
-  margin-left: 180px;
-  font-size: 18px;
-}
-
-#top h2
-{
-  text-align: center;
-}
-
-#top p
-{
-  width:60%;
-  text-align: center;
-  text-align: justify;
-  margin: auto;
-  margin-top: 30px;
-  color: gray;
-  font-size: 17px;
-}
-
-footer
-{
-  background: rgb(0, 0, 0);
-  height:160px;
-  margin-top: 50px;
-}
-
-footer h6 
-{
-  color:white;
- text-align: center;
-}
-
-footer h5
-{
-  color:white;
-  font-size: 16px;
-  text-align: center;
-  margin-top: 40px;
-}
-
-#hr
-{
-  width:60%;
-  margin-left:300px;
-}
-
-  @media only screen and (max-width: 600px)
-  {
-
-    #pic
-    {
-      margin-left: 220px;
-      margin-top: -10px;
-      width:200px
-    }
-
-    #top
-    {
-      width:147%;
-      height:1000px;
-    }
-#main
-{
-  display:block;
-}
-
-#top h1
-{
-  margin-top: 50px;
-  margin-left: 230px;
-}
-
-#top h4
-{
-  margin-top: -40px;
-  margin-left: 230px;
-}
-
-#top h5
-{
-  margin-top: 30px;
-  margin-left: 190px;
-  font-size: 16px;
-}
-
-#top h2
-{
-  margin-left: 100px;
-  margin-top: 30px;
-}
-
-
-#top p
-{
-  width:70%;
-  margin-top: 10px;
-  margin-left: 150px;
-  padding: 30px;
-
-}
-
-footer
-{
-  background: rgb(0, 0, 0);
-  height:160px;
-  margin-top:200px;
-}
-
-#hr
-{
-  width:70%;
-  margin-left:152px;
-}
-  }
 </style>
 
-<body>
+<body class="index-page">
 
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-  <div class="container-fluid">
-    <div class="row"> 
-      <div class="col-md-3 sm-6">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      
         
-  <nav>
+      </a>
 
-<div id="icon"><img src="images/menu.png">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          
+          <li><a href="#project">Projects</a></li>
+
+          <li><a href="#practices">practices</a></li> 
+
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
 
 
-<ol>
+    <section id="hero" class="hero section">
 
-<li><a href="Project.html">Projects</a></li>
-<li><a href="mypractices.html">Html</a></li>
-<li><a href="jawasciptpractice.html">Jawascript</a></li>
-<li><a href="jqpractice.html">jquery</a></li>
-<li><a href="bootpractice.html">Bootstrap</a></li>
-<li><a href="https://www.behance.net/srishtibhandari1">Behance</a></li>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-</ol>
+        <div class="row align-items-center content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h2>Designing intuitive experiences</h2>
+            <p class="lead">Transforming ideas into elegant solutions through creative design and innovative development</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+              
+              <a href="#project" class="btn btn-outline">View My Projects</a>
+            </div>
+
+            
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+              <div class="stat-item">
+                
+              </div>
+              <div class="stat-item">
+                
+              </div>
+              <div class="stat-item">
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="assets/images/s3.png" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+              <div class="shape-1"></div>
+              <div class="shape-2"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
 
 
-</div>
-</nav>
-</div>
+    <section id="about" class="about section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>I’m an aspiring UI/UX designer learning to create thoughtful, user-centered designs through research, prototyping, and visual design.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image">
+              <img src="assets/images/s1.jpg" alt="Profile Image" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <span class="subtitle">About Me</span>
+
+              <h2>UI/UX Designer &amp; Web Developer</h2>
+
+              <p class="lead mb-4">I’m a UI/UX designer passionate about crafting intuitive and visually appealing digital experiences. I focus on user needs, usability, and clean design to create meaningful products.</p>
+
+              <p class="mb-4">User-focused design with clarity and purpose</p>
+
+              <div class="personal-info">
+                <div class="row g-4">
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Name</span>
+                      <span class="value">Shrishti </span>
+                    </div>
+                  </div>
+
+              
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Age</span>
+                      <span class="value">19 Years</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Nationality</span>
+                      <span class="value">Indian</span>
+                    </div>
+                  </div>
+
+                    <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Email</span>
+                      <span class="value">bhandarisrishti66@gmail.com</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="signature mt-4">
+                <div class="signature-image">
+                  <img src="assets/img/misc/signature-1.webp" alt="" class="img-fluid">
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
 
 
-<div class="col-md-9 sm-6">
-  <div id="top">
 
-        <div id="main">
+    <section id="resume" class="resume section">
 
-    <img id="pic"src="images/profilepic.png">
 
-      <div id="text">
-         <h1 > HI, I'm Shrishti Bhandari<h1>
-         <h4> UI-UX Designer</h4>
+      <div class="container section-title" data-aos="fade-up">
+        <h2>My Resume</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Aspiring UI/UX designer skilled in HTML, CSS, JavaScript, and Bootstrap, focused on building clean, responsive, and intuitive interfaces.</p>
+      </div>
 
-         <h5> I craft Beautiful,user-friendly didgital experiences</h5>
-         </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up">
+                <h2>My Education</h2>
+                <p class="lead">UI/UX Design Diploma (Arena Animation) with ongoing Bachelor’s degree from Delhi University.</p>
+
+                <div class="timeline">
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">School Education</h4>
+                      <span class="period">Jun, 2024 </span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">School</h3>
+                      <p class="description">Completed school education in 2024 with a focus on foundational academics.</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">Diploma in UI/UX & Graphics Design</h4>
+                      <span class="period">July 2024 - dec 2025</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Arena Animation, GTB Nagar</h3>
+                      <p class="description">
+                        Completed a comprehensive diploma program focused on UI/UX, graphic design, motion graphics, and web development. Gained hands-on experience in graphic design tools.
+                      </p>
+                      <ul>
+                        <li> including Adobe Photoshop, Illustrator, CorelDRAW, and InDesign for creating visual assets, branding, and layouts.</li>
+                        <li>Developed motion graphics skills using Adobe After Effects to create engaging animations and visual effects.</li>
+                        <li>Built a strong foundation in web design and development using HTML, CSS, JavaScript, jQuery, Bootstrap, and WordPress, with a focus on responsive, user-friendly, and visually consistent interfaces.</li>
+                        
+                      </ul>
+                      <p></p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="timeline-left">
+                      <h4 class="company">Bachelor of Arts History & Political Science.</h4>
+                      <span class="period">August 2024 – Present</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Delhi University</h3>
+                      <p class="description">Currently pursuing a Bachelor of Arts Programme with a combination of History and Political Science. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    <section id="portfolio" class="portfolio section">
+ <a name="project"></a>
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Designed and developed user-centered UI/UX projects focusing on usability, visual consistency, and responsive design.</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="images/b16.jpg" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="images/b16.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a>
+                      <a href="Bakeryy.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Web Design</span>
+                  <h3>Whisk and Crumble Bakery</h3>
+                  <p>This bakery website was designed and developed as a practice project.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-graphics">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="images/k10.jpg" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="images/k10.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a>
+                      <a href="kider/kid.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">WEB DESIGN</span>
+                  <h3>Little Stars Academy</h3>
+                  <p>A responsive kids education website focused on  learning and simple user experience.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-motion">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="creative minds/images/h10.jpg" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="creative minds/images/h10.jpg" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a>
+                      <a href="creative minds/easyghar.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">WEB DESIGN</span>
+                  <h3>EasyGhar Househelper Website</h3>
+                  <p>A modern home-service hiring website focused on convenience, and user experience.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-brand">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="images/bot11.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="botanicalgarden.html" class="glightbox preview-link" data-gallery="portfolio-gallery-brand"><i class="bi bi-eye"></i></a>
+                      <a href="botanicalgarden.html" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">WEB DESIGN</span>
+                  <h3>Botanical Garden</h3>
+                  <p>A modern website design for a botanical garden, blending nature with digital elegance.</p>
+                </div>
+              </div>
+            </div>
+
+           
+            </div>
+
+           
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+ <section id="skills" class="skills section">
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Practices</h2>
+          <a name="practices"></a>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Web Development Practice Pages</p>
+      </div>
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 skills-animation">
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+             <a href="mypractices.html"><h3>HTML</h3></a>
+              <p>Created structured and semantic web pages.</p>
+             
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+             <a href="jawasciptpractice.html"> <h3>JavaScript</h3></a>
+              <p>basic functionalities to understand JavaScript concepts.</p>
+             
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+             <a href="jqpractice.html"><h3>Jquery</h3></a>
+              <p>Implemented dynamic elements for smoother user interactions.</p>
+       
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+             <a href="bootpractice.html"><h3>Bootstrap</h3></a>
+              <p>Developed responsive,Bootstrap components and grid system.</p>
+         
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+    </section>
+  
+    <section id="contact" class="contact section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-category mb-3">Contact</div>
+             
+              <p class="lead mb-4">I’m always open to discussing design ideas, collaborations, or new opportunities. Feel free to reach out using the details below.</p>
+
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3"></i>
+                  <span>bhandarisrishti66@gmail.com</span>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      
+      <div class="social-links d-flex justify-content-center">
+
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+     
+      </div>
+      
     </div>
 
-
-    <h2>📝About me </h2>
-<hr id="hr">
-
-     <p>Hi, I’m Shrishti — a passionate learner with a creative and technical edge. I completed my schooling in 2024 and am currently pursuing my Bachelor's degree at Delhi University. Alongside, I’m exploring the world of UI/UX design through a professional course at Arena Animation, where I’m learning how to craft user-friendly digital experiences.</p>
-
-     <p>With hands-on knowledge of HTML, CSS, JavaScript, and jQuery,Bootstrap  and currently learning Wordpress, I’m building a strong foundation in front-end development. Beyond tech, I’m also a writer at heart — and proud to be a co-author of two published books, where I’ve expressed my thoughts and creativity through words.
-
-I aim to blend design, code, and storytelling to create meaningful digital products and experiences</p>
-</div>
- </div>
-</div>
-</div>
-</div>
-
-<footer>
-
-  <h6>📧E-mail:bhandarisrishti66@gmail.com</h6>
- <h6><img src="images/behance.png">behance- Shrishti Bhandari</h6> 
-<h6><img src="images/insta.png">Instagram-triggred_srishti</h6>
-
-<h5> Design with Shrishti Bhanadri</h5>
-
-</footer>
+  </footer>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

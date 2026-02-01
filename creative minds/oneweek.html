@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+     
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<style>
+
+  body
+ {
+  background: rgb(241, 237, 237);
+ }
+    #top
+  {
+  height:450px;
+  width:100%;
+  text-align: center;
+  }
+
+ #order
+ {
+  text-decoration: none;
+  color:black;
+  text-align:center;
+  border:2px solid white;
+  font-size:24px;
+  border-radius:30px;
+  width:30%;
+  display: inline-block;
+  padding:4px;
+  margin: auto;
+  cursor:pointer;
+  margin-top:50px;
+  transition:0.3s;
+ }
+  
+#order:hover
+ {
+    background:rgb(142, 216, 245); 
+    border-color: aliceblue;
+ }
+
+#content
+{
+   height:340px;
+   border:2px solid #0077B6;
+   border-radius:20px;
+   width:100%;
+   margin:auto; 
+   margin-top:50px;
+   background: rgb(229, 246, 255);
+}
+
+#content p
+{
+  color:gray;
+}
+
+#content ul li
+{
+  color:#0077B6;
+  font-size:17px;
+}
+
+.card
+    {
+        border-radius: 20px;
+        width:220px;
+        margin-left: 2px;
+        height:400px;
+        margin-top:50px;
+        cursor: pointer; 
+    }
+
+    
+
+    .card ul li
+    {
+      list-style: none;
+      color: #0077B6;
+      font-size: 17px;
+      
+    }
+
+    .card p
+    {
+      color:#0077B6;
+      font-size: 20px;
+      border: 2px solid #0077B6;
+      border-radius: 20px;
+      width:28%;
+      margin: auto;
+      text-align: center;
+      transition: 0.5s;
+    }
+
+    .card p:hover
+    {
+      border:0px solid #0077B6;
+      background: rgb(155, 207, 239);
+      color:white;
+  
+    }
+
+    .card h5
+    {
+      margin-left: 50px;
+      color:rgb(33, 33, 138);
+    }
+#card
+ {
+  width:94%;
+  margin: auto;
+  margin-left:5px;
+ }    
+
+ .carousel-control-prev,.carousel-control-next
+ {
+    background-color:rgb(73, 211, 253);
+    width:50px;
+    height:50px;
+    top:50%;
+    border-radius:50px;
+ }
+
+ .okay
+ {
+    width:100%;
+    margin:auto;
+   height:430px;
+  
+ }
+
+
+ .work
+ {
+  margin-top:40px;
+ }
+
+ .work h3
+ {
+font-size:25px;
+cursor: pointer;
+color:blue;
+text-align: center;
+ }
+
+.work p 
+{
+  color:gray;
+  text-align: justify;
+cursor: pointer;
+text-align: center;
+}
+
+footer
+{
+  background: rgb(111, 156, 203);
+  height:740px;
+  margin-top: 50px;
+}
+
+#text
+ {
+ width:100%;
+ }
+
+    
+  .p :hover
+  {
+  color:blue;
+  }
+
+ .photo2
+{
+  transition: 1s;
+  margin-top:60px;
+}
+.photo2:hover
+{
+transform: scale(1);
+box-shadow: 10px 10px 10px gray;
+}
+.photo p 
+{
+  color:gray;
+  margin-top:20px;
+} 
+
+.img
+{
+  width:60%;
+  height:130px;
+  border-radius: 100px;
+  margin: auto;
+}
+@media only screen and (min-width: 1200px) 
+{
+
+  
+.img
+{
+  width:45%;
+  height:130px;
+  border-radius: 100px;
+  margin: auto;
+}
+#content
+  {
+   width:90%; 
+   height:330px;
+   margin-top:50px;   
+
+  }
+
+    .card h5
+    {
+      margin-left: 80px;
+      color:rgb(33, 33, 138);
+    }
+  .card
+  {
+      height:420px;
+      margin-left:10px;
+      width:100%;
+      
+       
+  }
+  #card
+ {
+  width:100%;
+  margin: auto;
+ } 
+ 
+ .okay
+ {
+  width:100%;
+ 
+ }
+ 
+ footer 
+{
+height:350px;
+
+}   
+
+.hire
+{
+  width:35%;
+  margin: auto;
+}
+.photo
+{
+  margin-top:20px;
+  margin-left:100px;
+}
+ 
+
+#pic
+{
+  margin-left:100px;
+}
+}
+</style>
+<body>
+ 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <img src="images/logo.jpg">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item fs-5">
+          <a class="nav-link active" aria-current="page" href="easyghar.html">🏠Home</a>
+        </li>
+
+        <li class="nav-item fs-5">
+          <a class="nav-link active" aria-current="page" href="helper.html">📝Servics</a>
+        </li>
+          
+         
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="Aboutus,html">📖About us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="review.html">💬Reviews</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control w-30 fs-5 me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <div class="container" style="background: rgb(212, 241, 250);margin-top: 20px;width:100%; height:350px;border-radius:20px;">
+  
+   <div class="row">
+     
+    <div class="col-lg-6 mx-auto">
+     
+ 
+       <div id="top">
+        <h1 class="animate__animated animate__fadeInDown"> EasyGhar🏠 </h1>
+     <p style="text-align:center;width:60%;margin:auto;color:rgb(0, 0, 0);font-size:20px;margin-top: 50px;"> Hire Trained Househelpers – Clean, Safe, and Reliable.</p>
+
+    <h2 style="margin: auto;
+    color:rgb(0, 0, 0);margin-top:30px;">Trusted Help for Every Home</h2>
+
+   <a href="helper.html" id="order"> Hire Now </a>
+ 
+    </div>
+    </div>
+    
+  </div>
+</div>
+    
+
+<div class="container">
+  <div class="row">
+    <div class="col"> 
+    
+     <div id="content">
+      <h2 class="animate__animated animate__fadeInDown"style="text-align:center;">💡 Why Choose Weekly Help?</h2>
+
+       <ul style="cursor: pointer;list-style:none;text-align: center;">
+
+        <li style="margin-top:30px;">⏱️Flexible Scheduling</li>
+        <p>Choose your preferred days and time slots—no long-term commitment required!.</p>
+
+         <li>✅ Consistency: Same helper </li>
+         <p>Build comfort and routine with someone who understands your needs</p>
+
+         <li>🧽Custom Tasks</li> 
+         <p>From cleaning and cooking to elderly care—tailor tasks to fit your routine.</p>
+       
+      </ul>
+   </div>
+    </div>
+   
+
+    <div class="col">
+
+         <div id="pic">
+           <img class="photo2"src="images/h11.jpg">
+         </div>  
+
+    </div>
+ </div>
+</div>
+
+<div class="hire">
+
+  <h2 id="hire" class="animate__animated animate__fadeInDown" style="text-align: center;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background:#0077B6;color:white;width:60%;margin:auto;margin-top:40px;border-radius:20px;">✅Hire Househelp</h2>
+
+  <p style="margin-top:20px;color:gray;text-align: center;font-size:20px;">Short-Term Help, Long-Term Relief – Book for a Day.</p>
+
+</div>
+
+<div class="container">
+    <div class="row">
+       <div class="col-12 col-lg-6">
+
+  <div class="okay">
+
+     <div id="carouselExample" class="carousel slide">
+
+         <div class="carousel-inner">
+
+   
+     <div id="card">
+       <div class="carousel-item active">
+          <div class="row">
+
+            <div class="col-6 col-md-6"> 
+                <div class="card">
+                  <img class="img" src="images/h20.jpg">
+             <ul>
+                      <h5> Preeti</h5>
+                      <li>Age:27 year</li>
+                      <li>city-pune</li>
+                      <li>Language:Hindi ,English,Marathi</li>
+                      <li>Experience:1 year</li>
+                      <li>Service Skill:Cleaning</li>
+                  </ul>
+
+                  <p>Hire</p>
+                 </div>     
+            </div>
+ 
+         <div class="col-6 col-md-6"> 
+            <div class="card">
+
+            <img class="img" src="images/h24.jpg">
+                   <ul>
+                      <h5> Rinki </h5>
+                      <li>Age:26 year</li>
+                      <li>city-mumbai</li>
+                      <li>Language:Hindi ,English,Marathi</li>
+                      <li>Experience:1 year </li>
+                      <li>Service Skill:cleaning</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+        
+
+    </div>    
+    </div>
+  
+
+    <div class="carousel-item">
+         <div class="row">
+            
+           <div class="col-6 col-md-6"> 
+            <div class="card">
+
+              <img class="img" src="images/h25.jpg">
+                <ul>
+                      <h5>Meenu</h5>
+                      <li>Age:28 year</li>
+                      <li>city-Delhi</li>
+                      <li>Language:Hindi ,English,Bihari</li>
+                      <li>Experience:1 year </li>
+                      <li>Service Skill:Cleaning</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+ 
+         <div class="col-6 col-md-6"> 
+            <div class="card">
+                <img class="img" src="images/h27.jpg">
+               <ul>
+                       <h5>shina</h5>
+                      <li>Age:32 year</li>
+                      <li>city-Ahemdabad</li>
+                      <li>Language:Hindi ,English,Gujrati</li>
+                      <li>Experience:3 year </li>
+                      <li>Service Skill:Cleaning</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+</div>
+
+</div>
+
+
+ <div class="carousel-item">
+         <div class="row">
+            
+           <div class="col-6 col-md-6"> 
+            <div class="card">
+
+           <img class="img" src="images/h29.jpg">
+              <ul>
+                  <h5>Diya</h5>
+                      <li>Age:26 year</li>
+                      <li>city-pune</li>
+                      <li>Language:Hindi ,English,Marathi</li>
+                      <li>Experience:freasher</li>
+                      <li>Service Skill:Cleaning</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+ 
+
+    
+         <div class="col-6 col-md-6"> 
+            <div class="card">
+
+       <img class="img" src="images/h21.jpg">
+              <ul> 
+                 <h5>pari</h5>
+                      <li>Age:22 year</li>
+                      <li>city-Delhi</li>
+                      <li>Language:Hindi ,English</li>
+                      <li>Experience:freasher </li>
+                      <li>Service Skill:Cleaning</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+
+     </div>
+
+      </div>
+</div>
+</div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  </div>
+
+    </div>
+
+<div class="col-12 col-lg-6">
+      <div class="photo">
+         <img class="photo2"src="images/h13.jpg">
+
+         <p>Find reliable, background-checked maids for your daily household needs. Book in minutes and enjoy a cleaner, more organized homeFrom daily chores to deep cleaning — your perfect maid is just a click away.</p>
+      </div>
+
+</div>
+
+    
+</div>
+</div>
+</div>
+</div>
+
+<div class="hire">
+
+  <h2 class="animate__animated animate__fadeInDown" style="text-align: center;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background:#0077B6;color:white;width:60%;margin:auto;margin-top:100px;border-radius:20px;">✅Hire Caretaker</h2>
+
+   <p style="margin-top:20px;color:gray;text-align: center;font-size:20px;">Reliable Care, When You Need It – Even for a Day!</p>
+
+</div>
+
+<div class="container">
+    <div class="row">
+       <div class="col-12 col-lg-6">
+
+  <div class="okay">
+
+     <div id="carouselExample2" class="carousel slide">
+
+         <div class="carousel-inner">
+
+   
+     <div id="card">
+       <div class="carousel-item active">
+          <div class="row">
+
+            <div class="col-6 col-md-6"> 
+                <div class="card">
+                  <img class="img" src="images/h28.jpg">
+                   <ul>
+                     <h5>bharti </h5>
+                      <li>Age:26 year</li>
+                      <li>city-mumbai</li>
+                      <li>Language:Hindi ,English,Marathi</li>
+                      <li>Experience:1 year </li>
+                      <li>Service Skill:Caretaker</li>
+                  </ul>
+
+                  <p>Hire</p>
+                 </div>     
+            </div>
+ 
+         <div class="col-6 col-md-6"> 
+            <div class="card">
+
+             <img class="img"src="images/h26.jpg">
+
+                <ul>
+                     <h5>Sarita </h5>
+                      <li>Age:35 year</li>
+                      <li>city-mumbai</li>
+                      <li>Language:Hindi ,English,Marathi</li>
+                      <li>Experience:4 year </li>
+                      <li>Service Skill:Caretaker</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+        
+
+    </div>    
+    </div>
+  
+
+    <div class="carousel-item">
+         <div class="row">
+            
+           <div class="col-6 col-md-6"> 
+            <div class="card">
+
+            <img class="img" src="images/h24.jpg">
+                   <ul>
+                     <h5>Rinki </h5>
+                      <li>Age:26 year</li>
+                      <li>city-mumbai</li>
+                      <li>Language:Hindi ,English,Marathi</li>
+                      <li>Experience:1 year </li>
+                      <li>Service Skill:Caretaker</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+ 
+         <div class="col-6 col-md-6"> 
+            <div class="card">
+
+             
+             <img class="img" src="images/h27.jpg">
+               <ul>
+                      <h5>shina</h5>
+                      <li>Age:32 year</li>
+                      <li>city-Ahemdabad</li>
+                      <li>Language:Hindi ,English,Gujrati</li>
+                      <li>Experience:3 year </li>
+                      <li>Service Skill:Caretaker</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+</div>
+
+</div>
+
+
+ <div class="carousel-item">
+         <div class="row">
+            
+           <div class="col-6 col-md-6"> 
+            <div class="card">
+
+              <img class="img" src="images/h17.jpg">
+                  <ul>
+                   <h5> Rosy</h5>
+                      <li>Age:30 year</li>
+                      <li>city-Delhi</li>
+                      <li>Language:Hindi ,English</li>
+                      <li>Experience:Freasher</li>
+                      <li>Service Skill:Caretaker</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+ 
+
+    
+         <div class="col-6 col-md-6"> 
+            <div class="card">
+
+            <img class="img" src="images/h20.jpg">
+             <ul>
+                      <h5> Preeti</h5>
+                      <li>Age:27 year</li>
+                      <li>city-pune</li>
+                      <li>Language:Hindi ,English,Marathi</li>
+                      <li>Experience:1 year</li>
+                      <li>Service Skill:Caretaker</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+
+     </div>
+
+      </div>
+</div>
+</div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  </div>
+
+    </div>
+
+<div class="col-12 col-lg-6">
+      <div class="photo">
+         <img class="photo2"src="images/h15.jpg">
+
+         <p>Hire compassionate and verified caretakers for elderly or patient care at home. and peace of mindGet dedicated and trained caretakers for seniors, childrent. We ensure compassionate care with trust and professionalism.</p>
+      </div>
+
+</div>
+
+    
+</div>
+</div>
+</div>
+</div>
+
+<div class="hire">
+  <h2 class="animate__animated animate__fadeInDown" style="text-align: center;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background:#0077B6;color:white;width:60%;margin:auto;margin-top:100px;border-radius:20px;">✅Hire Cook</h2>
+
+  <p style="margin-top:20px;color:gray;text-align: center;font-size:20px;">Hire a Professional Cook for a Day – Quick & Easy!</p>
+</div>
+
+<div class="container">
+    <div class="row">
+       <div class="col-12 col-lg-6">
+
+  <div class="okay">
+
+     <div id="carouselExample3" class="carousel slide">
+
+         <div class="carousel-inner">
+
+   
+     <div id="card">
+       <div class="carousel-item active">
+          <div class="row">
+
+            <div class="col-6 col-md-6"> 
+                <div class="card">
+                 <img class="img"src="images/h19.jpg">
+               <ul>
+                      <h5>Geeta</h5>
+                      <li>Age:30 year</li>
+                      <li>city-Delhi</li>
+                      <li>Language:Hindi ,English,</li>
+                      <li>Experience:1 year</li>
+                      <li>Service Skill:Cook</li>
+                  </ul>
+
+                  <p>Hire</p>
+                 </div>     
+            </div>
+ 
+         <div class="col-6 col-md-6"> 
+            <div class="card">
+
+             <img class="img" src="images/h21.jpg">
+              <ul>
+                      <h5>Priya</h5>
+                      <li>Age:29 year</li>
+                      <li>city-Delhi</li>
+                      <li>Language:Hindi ,English</li>
+                      <li>Experience:3 year</li>
+                      <li>Service Skill:Cook</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+        
+
+    </div>    
+    </div>
+  
+
+    <div class="carousel-item">
+         <div class="row">
+            
+           <div class="col-6 col-md-6"> 
+            <div class="card">
+
+            <img class="img" src="images/h22.jpg">
+
+             <ul>
+                <h5>Rahul</h5>
+                      <li>Age:32 year</li>
+                      <li>city-Ahemdabad</li>
+                      <li>Language:Hindi ,English,gujrati</li>
+                      <li>Experience:3 years </li>
+                      <li>Service Skill:Cook</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+ 
+         <div class="col-6 col-md-6"> 
+            <div class="card">
+
+             <img class="img" src="images/h29.jpg">
+              <ul>
+                  <h5>Kaveri</h5>
+                      <li>Age:22 year</li>
+                      <li>city-Delhi</li>
+                      <li>Language:Hindi ,English</li>
+                      <li>Experience:freasher </li>
+                      <li>Service Skill:Cook</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+</div>
+
+</div>
+
+
+ <div class="carousel-item">
+         <div class="row">
+            
+           <div class="col-6 col-md-6"> 
+            <div class="card">
+
+              <img class="img"src="images/h27.jpg">
+             <ul>
+                    <h5>Bharti </h5>
+                      <li>Age:25 year</li>
+                      <li>city-Delhi</li>
+                      <li>Language:Hindi ,English,bihari</li>
+                      <li>Experience:3 year </li>
+                      <li>Service Skill:Cook</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+ 
+
+    
+         <div class="col-6 col-md-6"> 
+            <div class="card">
+
+              <img class="img" src="images/h20.jpg">
+             <ul>
+                   <h5></h5>
+                      <li>Age:27 year</li>
+                      <li>city-pune</li>
+                      <li>Language:Hindi ,English,Marathi</li>
+                      <li>Experience:1 year</li>
+                      <li>Service Skill:Cook</li>
+                  </ul>
+
+                  <p>Hire</p>
+            </div>     
+         </div>
+
+     </div>
+
+      </div>
+</div>
+</div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  </div>
+
+    </div>
+
+<div class="col-12 col-lg-6">
+      <div class="photo">
+         <img class="photo2"src="images/h16.jpg">
+
+         <p>Find experienced home cooks for daily meals or special occasions. Enjoy healthy, delicious food .Hire skilled cooks for daily cooking, diet-based meals. Enjoy homely food without the hassle of the kitchen</p>
+      </div>
+
+</div>
+
+    
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+       <h1 class="animate__animated animate__fadeInDown" style="font-size:32px;text-align: center;margin-top:60px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">🗓️ What You Get in a Week</h1>
+
+  
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-4"> 
+         
+         <div class="work">
+          <h3>✔️ 7 Days of Continuous Help</h3>
+            <p>Enjoy uninterrupted service every day of the week—ideal for short-term needs or while your regular help is away.</p>
+
+         </div>     
+    </div>
+
+<div class="col-lg-4"> 
+        <div class="work">
+         <h3> ✔️Flexible Daily Hours</h3>
+          <p>You decide how long the helper stays each day. Choose between half-day or full-day support based on your workload.</p>
+         </div>     
+</div>
+
+
+<div class="col-lg-4"> 
+      <div class="work">
+      <h3>✔️ Same Helper All Week</h3>
+        <p>Build comfort and routine with one trusted helper throughout the week.</p>
+     </div>     
+</div>
+</div>
+</div>
+
+
+<footer>
+
+<h3 style="font-size:35px;color:white;text-align: center;cursor: pointer;">🏠EasyGhar </h3>
+
+<div id="container">
+   <div id="text">
+  <div class="row">
+     
+    <div class="col">
+     
+       <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:100px;cursor: pointer;">
+       🔗 QUICK LINKS
+       <li>- About Us</li>
+       <li>- Our Services</li>
+       <li>- Book a Helper</li>
+       <li>- Pricing</li>
+       <li>- Contact Us</li>
+      </ul> 
+       
+   </div>
+
+  <div class="col"> 
+      <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:60px;cursor: pointer;">
+      🔒 TRUST & SAFETY
+      <li>- 100% Background-Verified Helpers</li>
+      <li>- Our Services</li>
+      <li>- Book a Helper</li>
+      <li>- Pricing</li>
+      <li>- Contact Us</li>
+      </ul>
+</div>
+
+<div class="col">     
+     <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:50px;cursor: pointer;">
+    📍 LOCATIONS WE SERVE
+    <li>Delhi NCR | Mumbai | Bengaluru </li>
+    <li> Pune | Hyderabad | Chennai | Kolkata </li>
+    </ul>
+</div>
+
+<div class="col">
+    <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:20px;cursor: pointer;">
+    📞 CUSTOMER SUPPORT
+    <p>Need assistance? We’re here to help.</p>
+   <li>📱 Phone: +91-XXXXXXXXXX</li>
+   <li>📧 Email: support@homehelp.in  </li>
+   <li>🕐 Hours: 9:00 AM – 9:00 PM | Monday to Sunday</li>
+    </ul>
+</div>
+
+
+   <p style="color:white;text-align: center;cursor: pointer;"> 2025 EasyGhar Pvt. Ltd. </p>
+    
+    <p style="color:white;text-align: center;cursor:pointer ;"> All Rights Reserved  
+   Privacy Policy | Terms & Conditions | Sitemap</p>
+
+    </div>
+
+   </div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>    
+</body>
+</html>

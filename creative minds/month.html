@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+     
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<style>
+
+    #top
+  {
+  height:450px;
+  width:90%;
+  text-align: center;
+  }
+
+ #order
+ {
+  text-decoration: none;
+  color:black;
+  text-align:center;
+  border:2px solid white;
+  font-size:24px;
+  border-radius:30px;
+  width:30%;
+  display: inline-block;
+  padding:4px;
+  margin: auto;
+  cursor:pointer;
+  margin-top:50px;
+  transition:0.3s;
+ }
+  
+#order:hover
+ {
+    background:rgb(142, 216, 245); 
+    border-color: aliceblue;
+ }
+
+
+ body
+ {
+  background: rgb(241, 237, 237);
+ }
+    
+
+#box
+{
+ height:300px;
+ background: rgb(158, 205, 234);
+ margin-top:30px;
+} 
+
+.box2
+{
+  height:110px;
+  background: rgb(194, 230, 254);
+  border-radius:20px;
+  width:100%;
+  margin:auto;
+  margin-top:40px;
+  transition: 0.8s;
+}
+.box2:hover
+    {
+        box-shadow: 5px 5px 5px gray;
+        transform:scale(1);
+    }
+
+#in
+{
+width:90%;
+margin:auto;
+}
+
+.box3
+    {
+        border-radius: 10px;;
+        width:100%;
+        height:120px;
+        margin-top:50px;
+        cursor: pointer;
+        margin-left:10px;
+        background-color:rgb(241, 249, 252) ;
+        transition: 0.5s;  
+    }
+
+    .box3:hover
+    {
+        box-shadow: 5px 5px 5px gray;
+        transform:scale(1);
+    }
+    .box3 h1 
+    {
+ 
+        text-align:center;
+        font-size:18px;
+        border-radius: 6px;
+        color:gray;
+        cursor:pointer;
+        transition: 0.8s;
+    }
+    
+#write
+ {
+  width:90%;
+  margin: auto;
+ } 
+
+  #content
+{
+width:100%;
+margin:auto;
+text-align: center;
+padding:10px;
+border:2px solid #002eb6;
+border-radius:10px;
+margin-top:15%;
+}
+
+
+#content label
+{
+  font-size:20px;
+  padding:5px;
+  color:rgb(55, 129, 139);
+}
+
+#content table
+{width:100%;}
+
+
+input[type="text"]{width:100%; height:30px;}
+input[type="password"]{width:100%; height:30px;}
+
+#top
+{
+  margin:auto;
+}
+
+footer
+{
+  background: rgb(111, 156, 203);
+  height:740px;
+  margin-top: 350px;
+}
+
+#text
+ {
+ width:100%;
+ }
+
+    
+  .p :hover
+  {
+  color:blue;
+  }
+
+
+@media only screen and (min-width: 1200px) 
+{
+  .box2
+  {
+    width:80%;
+   height:100px;
+  }
+
+  #in
+  {
+    width:50%;
+    
+  }
+
+  
+#top
+{
+  margin-left:100px;
+}
+  #content
+{
+width:100%;
+}
+.box3
+    {
+        border-radius: 10px;;
+        width:100%;
+        height:120px;
+        margin-top:50px;
+        cursor: pointer;
+        margin-left:10px;
+        background-color:rgb(241, 249, 252) ;
+        transition: 0.5s;  
+    }
+
+    .box3 h1 
+    {
+ 
+        text-align:center;
+        font-size:22px;
+        border-radius: 6px;
+        color:gray;
+        cursor:pointer;
+        transition: 0.8s;
+    }
+#write
+ {
+  width:70%;
+  margin: auto;
+ }
+ 
+ 
+ footer 
+{
+height:350px;
+margin-top:50px;
+}  
+
+}
+
+
+</style>
+<body>
+    
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+   
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <img src="images/logo.jpg">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item fs-5">
+          <a class="nav-link active" aria-current="page" href="easyghar.html">🏠Home</a>
+        </li>
+
+       
+         <li class="nav-item fs-5">
+          <a class="nav-link active" aria-current="page" href="helper.html">📝Servics</a>
+        </li> 
+         
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="Aboutus.html">📖About us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link fs-5" href="review.html">💬Reviews</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control w-30 fs-5 me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <div class="container" style="background: rgb(212, 241, 250);margin-top: 20px;width:100%; height:350px;border-radius:20px;">
+  
+   <div class="row">
+     
+    <div class="col-lg-6 mx-auto">
+     
+ 
+       <div id="top">
+        <h1 class="animate__animated animate__fadeInDown"> EasyGhar🏠 </h1>
+     <p style="text-align:center;width:60%;margin:auto;color:rgb(0, 0, 0);font-size:20px;margin-top: 50px;"> Hire Trained Househelpers – Clean, Safe, and Reliable.</p>
+
+    <h2 style="margin: auto;
+    color:rgb(0, 0, 0);margin-top:30px;">Trusted Help for Every Home</h2>
+
+   <a href="helper.html" id="order"> Hire Now </a>
+ 
+    </div>
+    </div>
+    
+  </div>
+</div>
+    
+    
+
+<div class="container" style="margin-top:20px;">
+  <div class="row">
+    <div class="col-lg-8"> 
+
+      <div id="box">
+   
+     <div style="width:80%;margin:auto;">
+        <h3 class="animate__animated animate__fadeInDown"  style="text-align: center;margin-top:20px;">💡Why Choose Monthly Help?</h3>
+         <p style="color:rgb(255, 253, 253);text-align:justify;text-align:center;margin-top:50px;font-size: 18px;">Our monthly plan offers reliable daily assistance with a trusted helper assigned exclusively to you for the entire month. Enjoy the convenience of a fixed monthly price—no hidden charges or surprises. Whether you need part-time or full-time support, you can create a custom schedule that suits your routine. All our staff are fully verified, trained, and background-checked to ensure your peace of mind. Plus, you’ll receive priority support and free replacement in case of any concerns.</p>
+      </div>
+   </div>
+</div>
+
+    <div class="col-lg-4">
+        <div style="width:90%;margin:auto;margin-top:50px;background:rgb(251, 248, 248);">
+        <img src="images/h9.jpg">
+        </div>
+   </div>
+
+</div>
+</div>
+</div>
+
+
+<h2 class="animate__animated animate__fadeInDown" style="text-align: center;margin-top:40px;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">💰 Plans & Pricing</h2>
+
+
+<div class="container"style="margin-top:20px;height:170px;">
+  <div id="in">
+  <div class="row">
+ 
+    <div class="col-6 col-lg-6"> 
+        <div class="box2">
+           <h5 style="color:blue;text-align:center;">💼 Standard Plan</h5>
+           <p style="color:gray;text-align: center;padding:6px;cursor: pointer;">Includes cleaning & basic help for 2–4 hours/day</p>
+          </div>
+    </div>
+
+    <div class="col-6 col-lg-6"> 
+       <div class="box2">
+          
+           <h5 style="color:blue;text-align:center;">👩‍👧 Family Plan</h5>
+            <p style="color:gray;text-align: center;padding:6px;cursor: pointer;">Includes cooking + child/elder care + cleaning</p>
+         </div>
+    </div>
+</div>
+    </div>
+</div>     
+  
+<h3 class="animate__animated animate__fadeInDown"  style="text-align: center;margin-top:50px;">📦 What’s Included in the Monthly Plan?</h3>
+
+
+<div id="container">
+<div id="write">
+  <div class="row">
+
+     <div class="col-6 col-lg-3"> 
+       <div class="box3">
+
+          <h1>📅 Duration</h1> 
+          <ul style="margin-top:30px;list-style:none;">
+             <li style="color:blue;">✅30 Days Continuous Service</li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3"> 
+        <div class="box3">
+          
+           <h1>🕐Working Hours</h1>
+            <ul style="margin-top:30px;list-style: none">
+             <li style="color:blue">✅Custom – Choose your daily time slot</li>
+            </ul>
+        </div>
+      </div>
+
+    <div class="col-6 col-lg-3"> 
+        <div class="box3">
+            
+              <h1>📍Location Based</h1>
+                <ul style="margin-top:30px;list-style:none;">
+            <li style="color:blue">✅Helpers from your nearby area</li>
+            </ul>
+        </div>
+    </div>
+
+      <div class="col-6 col-lg-3"> 
+        <div class="box3">
+            
+              <h1>🔁 Easy Replacement</h1>
+                <ul style="margin-top:30px;list-style: none;">
+            <li style="color:blue">✅Free maid replacement (if needed) <li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div id="top">
+  <div class="row">
+
+    <div class="col-12 col-md-6">
+       <div id="content">
+       <table  cellspacing="20">
+
+   
+
+<form action="#" Method="post">
+
+<h2 style="font-size:25px;color:rgb(28, 42, 151)"> Fill the form to get started!</h2> 
+
+<tr>
+<td> <label style="margin-top:40px;"> User Id </label> </td> <td> <input required title="type Name here..."placeholder="type Name here" >
+</tr>
+
+<tr>
+<td> <label> Phone No. </label> </td> <td> <input required title="type Name here..."placeholder="" >
+</tr>
+
+<tr>
+<td> <label>Email Address </label> </td> <td> <input required title="type Name here..."placeholder="" >
+</tr>
+
+<tr>
+<td> <label> City </label> </td>
+<td>
+<select>
+<option value="Delhi">Delhi </option>
+<option value="Mumbai"> Mumbai </option>
+<option value="Chennai"> Chennai </option>
+<option value="Hyderabad">Hyderabad </option>
+<option value="Pune"> Pune </option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label > Your Requirement</label> </td>
+<td>
+<textarea rows="2" cols="30"> </textarea>
+</tr>
+
+<tr>
+<td> </td>
+<td> <input type="Submit" value="Register"> <input type="reset"></td>
+</td>
+</tr>
+
+</form>
+</table>
+</div>
+</div>
+      <div class="col-12 col-md-6">  
+        <div id="pic"class="d-md-block"style="margin-top:80px;
+          margin-left:10px;">
+            <img src="images/h10.jpg" alt="image" class="img-fluid">
+           </div>
+      </div>     
+</div>
+</div>
+
+</div>
+
+
+<footer>
+
+<h3 style="font-size:35px;color:white;text-align: center;cursor: pointer;">🏠EasyGhar </h3>
+
+<div id="container">
+   <div id="text">
+  <div class="row">
+     
+    <div class="col">
+     
+       <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:100px;cursor: pointer;">
+       🔗 QUICK LINKS
+       <li>- About Us</li>
+       <li>- Our Services</li>
+       <li>- Book a Helper</li>
+       <li>- Pricing</li>
+       <li>- Contact Us</li>
+      </ul> 
+       
+   </div>
+
+  <div class="col"> 
+      <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:60px;cursor: pointer;">
+      🔒 TRUST & SAFETY
+      <li>- 100% Background-Verified Helpers</li>
+      <li>- Our Services</li>
+      <li>- Book a Helper</li>
+      <li>- Pricing</li>
+      <li>- Contact Us</li>
+      </ul>
+</div>
+
+<div class="col">     
+     <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:50px;cursor: pointer;">
+    📍 LOCATIONS WE SERVE
+    <li>Delhi NCR | Mumbai | Bengaluru </li>
+    <li> Pune | Hyderabad | Chennai | Kolkata </li>
+    </ul>
+</div>
+
+<div class="col">
+    <ul  class="p" style="margin-top:30px;color:white;list-style: none;margin-left:20px;cursor: pointer;">
+    📞 CUSTOMER SUPPORT
+    <p>Need assistance? We’re here to help.</p>
+   <li>📱 Phone: +91-XXXXXXXXXX</li>
+   <li>📧 Email: support@homehelp.in  </li>
+   <li>🕐 Hours: 9:00 AM – 9:00 PM | Monday to Sunday</li>
+    </ul>
+</div>
+
+
+   <p style="color:white;text-align: center;cursor: pointer;"> 2025 EasyGhar Pvt. Ltd. </p>
+    
+    <p style="color:white;text-align: center;cursor:pointer ;"> All Rights Reserved  
+   Privacy Policy | Terms & Conditions | Sitemap</p>
+
+    </div>
+
+   </div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
+</html>
