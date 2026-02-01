@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+
+    body
+ {
+  margin: 0;
+}
+
+
+.navbar
+ {
+  position: fixed;
+  top: 20px;
+  left: 100;
+  width: 100%;
+  height: 70px;
+  background: rgba(18, 18, 18, 0.7);
+  z-index: 2000;
+}
+
+
+.navbar ul 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a
+ {
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar ul li a:hover
+{
+  color:#f5c16c;
+}
+
+.content
+ {
+  padding-top: 80px;
+}
+    body 
+    {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("images/b1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.content 
+{
+  background-image: url(images/b4.jpg);
+  background-size: cover;
+  height:500px;
+  padding: 40px;
+  margin-top:60px;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease, transform 0.6s ease;
+}
+
+.content.show
+{
+  opacity: 1;
+  transform: translateY(0);
+}
+.title 
+{
+  font-size: 48px;
+  color: white; 
+  font-family: serif;
+}
+.whisk 
+{
+  color: #f5c16c; 
+}
+
+.content p 
+{
+    color:white;
+    position: absolute;
+    top:250px;
+    left:70px;
+    font-size: 22px;
+}
+
+.content h1
+{
+    position: absolute;
+    top:150px;
+    left:30px;
+    font-size: 31px;
+}
+
+.content a
+{
+    position: absolute;
+    top:100px;
+}
+
+
+
+
+.content a
+{
+    position: absolute;
+    top:400px;
+    left:80px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 3px solid rgb(187, 133, 58);
+    padding: 10px;
+    border-radius: 30px;
+    letter-spacing: 3px;
+}
+
+.content a:hover 
+{
+    background:#f5c16c; 
+    color:black;
+    transition: 0.5s;
+}
+
+#order
+{
+    position: absolute;
+    left:240px;
+}
+
+#box
+{
+    background: rgba(18, 18, 18, 0.7);
+  z-index: 1000;
+  height:1200px;
+  margin-top: 30px;
+  position: absolute;
+  overflow: hidden;
+}
+#box h1 
+{
+  color:white;
+  position: absolute;
+  top:20px;
+  left:80px;
+  font-size: 40px;
+}
+#box p
+{
+  width:90%;
+  color:#696767;
+  margin-top:120px;
+  margin-left: 50px;
+
+}
+#pic
+{
+  margin-top: 20px;
+  margin-left: 50px;
+  border:3px solid grey;
+ width:80%;
+}
+
+#box ul li
+{
+  color:white;
+  margin-left: 10px;
+  font-size:20px;
+ width:90%;
+ text-align: justify;
+padding: 10px;
+}
+
+#line
+{
+  
+ position: absolute;
+ top:980px;
+ left:-10px;
+}
+
+#more
+{
+  text-decoration: none;
+  color:#f5c16c;
+  position: absolute;
+  top:1160px;
+  left: 180px;
+}
+
+
+#box2
+{
+  background:rgb(10, 2, 2);
+  height:1590px;
+  color:white;
+  position: absolute;
+  top:1790px;
+  width:100%;
+}
+
+#box2 h1 
+{
+  color:#f5c16c;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.img
+{
+  width:45%; 
+ border-radius: 200px;
+ padding:10px;
+ transition: 0.5s;
+}
+.img:hover
+{
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px #f5c16c;
+}
+#menu-card
+{
+  width:80%;
+  height:230px;
+  margin: auto;
+}
+
+#menu-card h3
+{
+  cursor: pointer;
+}
+
+
+#menu-card h3:hover
+{
+  color:#f5c16c;
+}
+.dotted
+{
+  border:none;
+  border-top:3px dotted #f5c16c;
+  width:100%;
+}
+
+.side
+{
+  display: flex;
+}
+.side p 
+{
+  margin-top: 40px;
+  font-size: 17px;
+}
+
+.carousel-indicators 
+{
+  bottom: 20px;            
+}
+
+.carousel-indicators button 
+{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  opacity: 1;
+  margin: 0 6px;
+  border: none;
+}
+
+.carousel-indicators .active 
+{
+  background-color: #f5a623; 
+}
+#banner
+{
+  position: absolute;
+  top:3400px;
+  height:500px;
+
+}
+
+#banner h2
+{
+  color:white;
+  margin-top:0px;
+}
+
+#banner p 
+{
+  color:#f5a623;
+}
+
+#banner ul li
+{
+  color:white;
+  width:80%;
+  font-size:20px;
+}
+
+#box3
+{
+  height:2700px;
+  position: absolute;
+  top:4080px;
+  background: rgba(18, 18, 18, 0.7);
+  z-index: 1000;
+  position: absolute;
+  overflow: hidden;
+  width:100%;
+}
+
+#box3 h1 
+{
+  color:#f5c16c;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.dotted2
+{
+  border:none;
+  border-top:3px dotted #f5c16c;
+  width:90%;
+  margin-left: 30px;
+}
+
+#wow
+{
+  overflow: hidden;
+}
+#photo
+{
+  width:100%;
+  height:320px;
+  padding:3px;
+ transition:0.4s ease;
+ overflow: hidden;
+}
+
+#photo:hover
+{
+transform:scale(1.1);
+}
+
+.card
+    {
+        border-radius: 10px;
+        width:100%;
+       background: rgba(18, 18, 18, 0.7);
+       z-index: 1000;
+        height:200px;
+        color:white;
+        margin-top:50px;
+        cursor: pointer;
+       padding: 10px;
+       margin-left:-1px;
+       
+    } 
+
+    .carousel-control-prev,.carousel-control-next
+ {
+    
+    width:50px;
+    height:50px;
+   margin-top:220px;
+    border-radius:50px;
+ }
+    #card
+ {
+  width:100%;
+  margin: auto;
+ }
+
+ .okay
+ {
+  position: absolute;
+  top:6800px;
+
+  width:100%;
+  margin-left: -8px;
+  overflow: hidden;
+ }
+
+ .okay h1 
+ {
+  color:#f5c16c;
+  margin-left:80px;
+ }
+ #pr
+ {
+  color:white;
+  width:90%;
+  margin:10px;
+  margin-top:30px;
+  text-align: justify;
+ }
+
+ #foot 
+ {
+  height:1260px;
+  width:100%;
+  position: absolute;
+  top:7500px;
+  overflow: hidden;
+  background: rgb(12, 12, 12);
+ }
+#footnav a 
+{
+  text-decoration: none;
+  list-style: none;
+  color: #f5c16c;
+   padding:30px;
+   font-size:18px;
+   text-align: center;
+}
+
+#footnav  a:hover
+{
+  color:white;
+}
+#footnav 
+{
+  margin-top: 50px;
+  margin-left: -50px;
+
+}
+#footnav h4 
+{
+  color:white;
+  margin-top: 50px;
+  margin-left:50px;
+}
+#foot h2
+{
+  color:white;
+  margin-top: 80px;
+  margin-left: 100px;
+  font-size:30px;
+
+}
+
+#last img 
+{
+  margin-left:70px;
+}
+#pr2 
+{
+  color:white;
+  width:90%;
+  margin-left:50px;
+}
+
+#footnav2 a 
+{
+  text-decoration: none;
+  list-style: none;
+  color: #f5c16c;
+   padding:30px;
+   font-size:18px;
+   text-align: center;
+  
+}
+
+#footnav2  a:hover
+{
+  color:white;
+}
+#footnav2 
+{
+  margin-top: 50px;
+  margin-left:-80px;
+
+
+}
+#footnav2 h4 
+{
+  color:white;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+#footnav3 
+{
+  text-decoration: none;
+  list-style: none;
+  color: #f5c16c;
+   padding:30px;
+   font-size:18px;
+  margin-top: 0px;
+  margin-left:-90px;
+  width:200%;
+ 
+}
+
+#footnav3  ul li:hover
+{
+  color:white;
+}
+
+#footnav3 h4 
+{
+  color:white;
+  margin-top: 19px;
+  margin-left: 30px;
+}
+
+#footnav3 ul li 
+{
+  list-style: none;
+  padding:10px;
+  margin-left: -16px;
+}
+.i
+{
+  margin-left: 70px;
+}
+#map 
+{
+  margin-top:40px;
+}
+@media only screen and (min-width: 992px) 
+{
+.navbar ul li a
+ {
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+  #main
+{
+    display:flex;
+    overflow: hidden;
+}
+
+.content 
+{
+  background-image: url(images/b4.jpg);
+  background-size: cover;
+  height:500px;
+  padding: 0px;
+  margin-top:60px;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.9s ease, transform 0.6s ease;
+}
+
+   .content p 
+{
+    color:white;
+    position: absolute;
+    top:240px;
+    left:110px;
+    font-size: 22px;
+}
+
+.content h1
+{
+    position: absolute;
+    top:170px;
+    left:100px;
+    font-size: 42px;
+} 
+
+.content a
+{
+    position: absolute;
+    top:400px;
+    left:150px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    border: 2px solid rgb(187, 133, 58);
+    padding: 10px;
+    border-radius: 30px;
+    letter-spacing: 3px;
+}
+
+.content a:hover 
+{
+    background:#f5c16c; 
+    color:black;
+    transition: 0.5s;
+}
+
+#order
+{
+    position: absolute;
+    left:300px;
+}
+#box
+{
+    background: rgba(18, 18, 18, 0.7);
+  z-index: 1000;
+  height:600px;
+  margin-top: 30px;
+  width:100%;
+  
+}
+#box h1 
+{
+  color:white;
+  position: absolute;
+  left:70px;
+  font-size: 40px;
+}
+#box p
+{
+  width:60%;
+  color:#696767;
+  margin-top:120px;
+  margin-left: 70px;
+
+}
+#pic
+{
+  margin-top: 40px;
+  margin-left: -500px;
+  border:3px solid grey;
+ width:35%;
+ height:450px;
+}
+
+#box ul li
+{
+  color:white;
+  margin-left: 40px;
+  font-size:20px;
+ width:55%;
+padding: 10px;
+}
+
+#line
+{
+  text-align: center;
+ position: absolute;
+ top:380px;
+}
+
+#more
+{
+  text-decoration: none;
+  color:#f5c16c;
+  position: absolute;
+  top:540px;
+  left: 480px;
+}
+
+#box2 
+{
+  position: absolute;
+  height:850px;
+  top:1190px;
+}
+#box2 h1 
+{
+  color:#f5c16c;
+  margin-left: 150px;
+  margin-top: 60px;
+}
+.img
+{
+  width:30%; 
+ border-radius: 200px;
+ padding:14px;
+ transition: 0.5s;
+}
+.img:hover
+{
+  transform: scale(1.1);
+  box-shadow: 2px 2px 2px #f5c16c;
+}
+#menu-card
+{
+
+  width:80%;
+  height:300px;
+  margin: auto;
+ 
+}
+
+.dotted
+{
+  border:none;
+  border-top:3px dotted #f5c16c;
+  width:100%;
+}
+
+#banner
+{
+  position: absolute;
+  top:2100px;
+  height:500px;
+  margin-left:170px;
+}
+#banner h2
+{
+  color:white;
+  margin-top:-100px;
+}
+
+#banner p 
+{
+  color:#f5a623;
+}
+
+#banner ul li
+{
+  color:white;
+  width:80%;
+  font-size:20px;
+}
+#box3
+{
+  height:700px;
+  position: absolute;
+  top:2550px;
+  background: rgba(18, 18, 18, 0.7);
+  z-index: 1000;
+  position: absolute;
+  overflow: hidden;
+  width:100%;
+}
+
+#box3 h1 
+{
+  color:#f5c16c;
+  margin-top: 20px;
+  margin-left: 130px;
+}
+.dotted2
+{
+  border:none;
+  border-top:3px dotted #f5c16c;
+  width:90%;
+  margin-left: 130px;
+}
+
+#wow
+{
+  overflow: hidden;
+  width: 100%;
+}
+#photo
+{
+  width:100%;
+  height:300px;
+  padding:3px;
+ transition:0.4s ease;
+ overflow: hidden;
+}
+
+#photo:hover
+{
+transform:scale(1.1);
+}
+
+.card
+    {
+        border-radius: 10px;
+        width:80%;
+        background: rgba(18, 18, 18, 0.7);
+        z-index: 1000;
+        height:170px;
+        color:white;
+        margin-top:50px;
+        cursor: pointer;
+        margin-left:30px;
+       padding: 10px;
+       
+    } 
+
+    .carousel-control-prev,.carousel-control-next
+ {
+    
+    width:50px;
+    height:50px;
+   margin-top:80px;
+    border-radius:50px;
+ }
+    #card
+ {
+  width:100%;
+  margin: auto;
+ }
+
+ .okay
+ {
+  position: absolute;
+  top:3300px;
+  left:100px;
+  width:85%;
+ }
+
+ .okay h1 
+ {
+  color:#f5c16c;
+  margin-left:130px;
+ }
+#pr
+ {
+  color:white;
+  width:70%;
+  margin-left:140px;
+  margin-top:30px;
+  text-align: justify;
+ }
+ #foot 
+ {
+  height:1000px;
+  width:100%;
+  position: absolute;
+  top:3730px;
+  background: rgb(12, 12, 12);
+ }
+
+ #map
+ {
+  width:100%;
+  margin-top:40px;
+ }
+
+ #footnav a 
+{
+  text-decoration: none;
+  list-style: none;
+  color: #f5c16c;
+   padding:30px;
+   font-size:18px;
+   text-align: center;
+}
+
+#footnav  a:hover
+{
+  color:white;
+}
+#footnav 
+{
+  margin-top: 50px;
+  margin-left: 60px;
+
+ width:70%;
+
+}
+#footnav h4 
+{
+  color:white;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+#foot h2
+{
+  color:white;
+  margin-top: 80px;
+  margin-left: 40px;
+}
+#last 
+{
+  display: flex;
+}
+#last img 
+{
+  margin-left:70px;
+}
+
+
+#first 
+{
+  margin-left: -20px;
+}
+
+#pr2 
+{
+  color:white;
+  width:100%;
+  margin-left:40px;
+}
+
+.i 
+{
+  margin-left: 50px;
+}
+#footnav2 a 
+{
+  text-decoration: none;
+  list-style: none;
+  color: #f5c16c;
+   padding:30px;
+   font-size:18px;
+   text-align: center;
+}
+
+#footnav2  a:hover
+{
+  color:white;
+}
+#footnav2 
+{
+  margin-top: 50px;
+  margin-left:20px;
+
+  width:70%;
+
+}
+#footnav2 h4 
+{
+  color:white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#footnav3 
+{
+  text-decoration: none;
+  list-style: none;
+  color: #f5c16c;
+   padding:30px;
+   font-size:18px;
+
+  margin-left: -20px;
+  width:100%;
+  margin-top: 50px;
+}
+
+#footnav3  ul li:hover
+{
+  color:white;
+}
+
+#footnav3 h4 
+{
+  color:white;
+  margin-top: -29px;
+  margin-left: 30px;
+}
+
+#footnav3 ul li 
+{
+  list-style: none;
+  padding:10px;
+
+}
+}
+</style>
+<body>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="bakerymenu.html">Menu </a></li>
+    <li><a href="bakeryabout.html">About Us</a></li>
+    <li><a href="bakerygallery.html">Gallery</a></li>
+    <li><a href="bakerycontact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+    <h1 class="title">
+  Welcome to <span class="whisk">Whisk & Crumble</span>
+</h1>
+    <p>Freshly Baked Happiness, Just for You</p>
+ 
+   <div id="main">
+    <a href="">Our Menu</a> 
+      <a id="order" href="">Place Order</a> 
+   </div> 
+    <div style="height: 200vh"></div>
+     
+</div> 
+
+<div id="box">
+  <div id="main">
+  <div>
+ <h1>Our Bakery Story</h1> 
+ <p>From early-morning breads to celebration cakes, we bake everything with care, quality ingredients, and a love for sharing happiness</p>
+
+ <ul>
+   <li>At our bakery, we blend fresh ingredients, time-honored recipes, and heartfelt passion to create treats that make every moment sweeter.</li>
+
+   <li>Our bakery is a warm place where fresh flavors, handcrafted recipes, and joyful moments come together in every bite.</li>
+
+   <li>Dedicated to freshness and flavor, we bake daily to bring you comforting classics and delightful creations made with love.</li>
+
+   <li>Committed to quality and taste, we bake fresh every day to bring you timeless favorites and joyful creations.”
+
+“With a passion for freshness and flavor.</li>
+ </ul>
+   <p id="line">Discover the story behind our bakery and how our love for baking shapes every treat we make</p>
+
+   <a id="more" href="">Know more</a>
+</div>
+<img id="pic" src="images/b5.jpg">
+</div>
+</div>
+
+<div id="box2">
+
+<h1> Our Menu </h1>
+<hr style="height:3px;background-color:#f5c16c;width:80%;margin: auto;"/>
+
+<div class="container">
+<div id="menu-card">
+<div class="row"> 
+     <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+       <div class="side">
+       <img src="images/c11.png" class="img">
+       <p>Soft donut coated with rich chocolate glaze</p>
+       </div>
+       <h3> Chocolate Donut</h3>
+        
+       <hr class="dotted">
+       
+      </div> 
+
+    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <div class="side">
+       <img src="images/c12.png" class="img">
+       <p>Moist cake loaded with fresh fruits and light sweetness</p>
+       </div>
+       <h3> Fruit Cakes</h3>
+       <hr class="dotted">
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <div class="side">
+       <img src="images/c13.png" class="img">
+       <p>Soft, fluffy muffins baked fresh every day</p>
+       </div>
+       <h3> Fresh Muffins</h3>
+       <hr class="dotted">
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <div class="side">
+       <img src="images/cake3.png"class="img">
+       <p>Rich chocolate sponge topped with creamy frosting</p>
+       </div>
+       <h3> Chocolate cupcake</h3>
+       <hr class="dotted">
+    </div>
+    
+    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <div class="side">
+       <img src="images/c5.png" class="img">
+       <p>Light sponge layered with raspberry cream and glaze</p>
+       </div>
+       <h3> Raspberry Pastry</h3>
+       <hr class="dotted">
+    </div>
+    
+    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <div class="side">
+       <img src="images/cake2.png" class="img">
+       <p>Soft cake with fresh strawberry cream and topping</p>
+       </div>
+       <h3> Stawberry Cupcake</h3>
+        <hr class="dotted">
+    </div>
+
+
+     </div>
+
+</div>
+</div>
+</div>
+
+<div id="banner">
+<div id="bannerSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+  <div class="carousel-indicators">
+  <button type="button" data-bs-target="#bannerSlider" data-bs-slide-to="0" class="active"></button>
+  <button type="button" data-bs-target="#bannerSlider" data-bs-slide-to="1"></button>
+  <button type="button" data-bs-target="#bannerSlider" data-bs-slide-to="2"></button>
+</div>
+  
+  <div class="carousel-inner">
+
+    
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row align-items-center">
+          
+          
+          <div class="col-md-6">
+            <img src="images/b8.jpg" class="img-fluid" alt="Banner 1">
+          </div>
+
+        
+          <div class="col-md-6">
+            <h2>Donuts – Freshly Glazed Delights</h2>
+            <p>Soft, creamy, and made to delight.</p>
+            <ul>
+               <li>Our cupcakes are baked fresh with light, fluffy sponge and topped with smooth, rich frosting.</li>
+
+               <li>Crafted in classic and chocolate flavors, they’re perfect for everyday cravings and sweet moments.</li>
+
+               <li>Ideal for gifting, parties, or enjoying a quick indulgence anytime.</li>
+               
+                
+            </ul>
+           <button class="btn btn-warning">Order Now</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+ 
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-md-6">
+            <img src="images/b9.jpg" class="img-fluid" alt="Banner 2">
+          </div>
+
+          <div class="col-md-6">
+            <h2>Cupcakes – Little Bites of Joy</h2>
+            <p>Soft bites coated in irresistible flavors.</p>
+            <ul>
+
+                <li>Light, soft donuts prepared fresh and finished with rich chocolate and classic glazes.</li>
+ 
+                <li>Each donut offers a perfect balance of sweetness and softness in every bite.</li>
+
+                <li>A popular choice for tea-time treats and on-the-go indulgence.</li>
+            </ul>
+           <button class="btn btn-warning">Order Now</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-md-6">
+            <img src="images/b10.jpg" class="img-fluid" alt="Banner 3">
+          </div>
+
+          <div class="col-md-6">
+            <h2>Cakes – Crafted for Celebrations</h2>
+            <p>Rich flavors made for memorable moments.</p>
+            <ul>
+
+                <li>Our cakes are made with quality ingredients to deliver moist texture and deep, satisfying flavors.</li>
+
+                <li>From simple everyday cakes to celebration favorites, each one is baked with care and precision.</li>
+
+                <li>Perfect for birthdays, anniversaries, and all of life’s special occasions.</li>
+            </ul>
+            <button class="btn btn-warning">Order Now</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#bannerSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#bannerSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+  </div>
+</div>
+
+<div id="box3">
+
+   <h1>Bakery Gallery</h1>
+   <hr style="height:3px;background-color:#f5c16c;width:80%;margin: auto;"/>
+
+<div id="main">
+
+    <div id="wow">
+    <img src="images/b11.jpg" id="photo">
+    </div>
+
+    <div id="wow">
+    <img src="images/b17.jpg" id="photo">
+    </div>
+
+    <div id="wow">
+    <img src="images/b13.jpg" id="photo">
+    </div>
+
+    <div id="wow">
+    <img src="images/b14.jpg" id="photo">
+    </div>
+  </div>
+
+
+  <div id="main">
+
+    <div id="wow">
+    <img src="images/b15.jpg" id="photo">
+    </div>
+
+    <div id="wow">
+    <img src="images/b16.jpg" id="photo">
+    </div>
+
+    <div id="wow">
+    <img src="images/b12.jpg" id="photo">
+    </div>
+
+    <div id="wow">
+    <img src="images/b18.jpg" id="photo">
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+
+    <div class="row">
+       <div class="col-12 col-lg-12">
+
+  <div class="okay">
+<h1>Customer Reviews</h1>
+<hr style="height:5px;background-color:#f5c16c;width:80%;margin: auto;"/>
+<p id="pr">We love hearing from our customers and value every word they share. Their feedback inspires us to keep baking fresh, flavorful treats and delivering the quality and care they trust us for. Each review reflects the joy, satisfaction, and sweet moments our bakery creates every day.
+</p>
+     <div id="carouselExample" class="carousel slide">
+
+         <div class="carousel-inner">
+
+   
+     <div id="card">
+       <div class="carousel-item active">
+          <div class="row">
+
+            <div class="col-6 col-md-3"> 
+                <div class="card">
+                  <p>⭐⭐⭐⭐</p>
+                 <p> “The cakes are absolutely delicious and always fresh. You can truly taste the quality in every bite.”</p>
+                    — Meera Sharma
+                 </div>     
+            </div>
+ 
+         <div class="col-6 col-md-3"> 
+            <div class="card">
+
+              <p>⭐⭐⭐⭐⭐</p>
+             <p>“I ordered donuts and cupcakes, and they were soft, flavorful, and perfectly sweet.”</p>
+                —  Aman Verma
+            </div>     
+         </div>
+        
+         
+         <div class="col-6 col-md-3"> 
+            <div class="card">
+             <p>⭐⭐⭐⭐⭐</p>
+
+            <p>“Beautifully made cakes and amazing taste. My family loved every single item.”</p>
+              — Ankita 
+            </div>     
+         </div>
+
+         <div class="col-6 col-md-3"> 
+            <div class="card">
+             <p>⭐⭐⭐⭐</p>
+             <p>“Fresh bakes, great variety, and quick service. This bakery never disappoints.”</p>
+                  — Rohit Mehta
+            </div>     
+         </div>
+        
+
+    </div>    
+    </div>
+  
+
+    <div class="carousel-item">
+         <div class="row">
+            
+           <div class="col-6 col-md-3"> 
+            <div class="card">
+              <p>⭐⭐⭐⭐</p>
+            <p>“The pastries are light and creamy, not too sweet. Perfect for celebrations and small treats.”</p>
+              — Pooja Singh
+            </div>     
+         </div>
+ 
+         <div class="col-6 col-md-3"> 
+            <div class="card">
+
+              <p>⭐⭐⭐⭐⭐</p>
+             <p>“Excellent quality and packaging. Everything tastes homemade and fresh.”</p>
+                — Aarti
+            </div>     
+         </div>
+
+         
+         <div class="col-6 col-md-3"> 
+            <div class="card">
+              <p>⭐⭐⭐⭐</p>
+       <p>“I ordered a cake for a birthday, and it was both stunning and delicious. Will order again!”</p>
+           — Anjali Kapoor
+            </div>     
+         </div>
+
+
+          <div class="col-6 col-md-3"> 
+            <div class="card">
+               <p>⭐⭐⭐⭐⭐</p>
+              <p>“One of the best bakeries I’ve tried. Fresh, flavorful, and made with so much care.”</p>
+          — Siddharth Jain
+            </div>     
+         </div>
+        
+
+        
+</div>
+
+</div>
+
+</div>
+</div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  </div>
+
+    </div> 
+</div>
+</div>
+
+
+<div id="foot">
+
+<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.6495874231246!2d77.2031591753034!3d28.70012697562791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfdbd167175b9%3A0x90dcccb8a8a4a2aa!2sBakery%20booth!5e0!3m2!1sen!2sin!4v1767537761471!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<div class="container mt-4">
+<div class="row g-3">
+
+  <div class="col-12 col-sm-4 col-lg-3">
+      <div id="first">  
+      <h2>Whisk & Crumble</h2>
+      <hr style="height:3px;background-color:#f5c16c;width:70%;margin-left:50px;"/>
+       <p id="pr2">“Freshly baked happiness every day.Delicious cakes, cupcakes, and donuts made with love.”</p>
+
+      <img src="images/f.png" class="i">
+      <img src="images/insta2.png" class="i">
+      <img src="images/wp.png" class="i">
+    </div>
+</div>
+
+<div class="col-4 col-lg-3">
+   <div id="footnav">
+     <h4> Quick Links</h4>
+       <ul>
+        <a href=""><li>Home</li></a> 
+        <a href=""><li>Menu</li></a> 
+        <a href=""><li>About Us</li></a> 
+        <a href=""><li>Gallery</li></a> 
+        <a href=""><li>Contact</li></a> 
+       </ul>
+     </div>
+</div>
+
+<div class="col-4 col-lg-3">
+      <div id="footnav2">
+        <ul>
+        <h4> Our Products</h4>
+        <a href=""><li>Cakes</li></a> 
+        <a href=""><li>Cupcake</li></a> 
+        <a href=""><li>Donuts</li></a> 
+        <a href=""><li>Muffins</li></a> 
+        <a href=""><li>Pastries</li></a> 
+        </ul>
+       </div>
+</div>
+
+
+<div class="col-4 col-lg-3 ">
+        <div id="footnav3">
+         <ul>
+          <h4> Get in touch</h4>
+            <li>📍 Address:Street no.12,Rohini sector3,New delhi</li>
+            <li>📞 Phone: +91 XXXXXXXXXX</li>
+            <li>✉️ Email: Whisk&Crumblebakery.com</li>
+            <li>🕒 Hours: Mon – Sun | 9:00 AM – 9:00 PM</li>
+            </ul>
+             </div>
+</div>
+
+</div>
+</div>
+
+
+
+
+</div>
+
+
+<script>
+  const elements = document.querySelectorAll('.content');
+
+  const observer = new IntersectionObserver
+  (
+    (entries) => 
+    {
+      entries.forEach(entry => 
+      {
+        if (entry.isIntersecting)
+         {
+          entry.target.classList.add('show');
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+
+  elements.forEach(el => observer.observe(el));
+</script>
+
+<script>
+
+    var p = document.getElementsById("photo")
+   
+    p.onmouseover = function()
+    {
+        p.style.transform="scale(1.10)"
+    }
+
+    p.onmouseout = function()
+    {
+        p.style.transform="scale(1)"
+    }
+
+</script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
