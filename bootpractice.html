@@ -11,21 +11,21 @@
 
 <style>
 
+body
+ 
 
 #top
 {
 font-size:1px;
 margin:auto;
+padding: 30px;
 }
 #head
 {
 text-align:center;
-background:#E2EAF4;
 width:20%;
 margin:auto;
-box-shadow:10px 10px 10px gray;
-border:2px solid;
-border-radius:20px;
+
 }
 #top ul li
 {
@@ -34,82 +34,77 @@ cursor:pointer;
 transition:0.5s;
 margin-left:6px;
 font-size:20px;
-border:1px solid;
-border-radius:20px;
 list-style:none;
 text-align:center;
-color:black;}
+color:rgb(63, 0, 0);}
+
 
 #top ul li:hover
 {
-background:black;
+background:#ECE4FE;
 transform:scale(1.10);
 transition:0.8s;
-color:white;}
+color:black;}
 
+#top a 
+{
+  text-decoration: none;
+}
 
-  
   
 body
-  {background-image:url(images/jawabg.jpg);
-   background-attachment:fixed;} 
+{
+  background: rgba(217, 189, 241, 0.3);
+}
 
-
+#first 
+{
+  background: white;
+  width:80%;
+  margin: auto;
+  height:250px;
+  
+}
 
 @media only screen and (max-width: 600px)
- {
-  body{background:;}
+{
 
   #top 
    {font-size:35px;
        width:50%;
       list-style:none;
-    margin-left:70px;}
+    margin-left:70px;
+  text-align: center;}
 
     #top ul li 
     {
-      width:100%;
+      display: inline-block;
+      text-align: center;
     }  
+
   #head{font-size:20px;
        width:40%;}
  }
 
 
-@media only screen and (min-width: 768px) 
-{
- body
-   {background:;}
-  #head{font-size:30px;
-    width:20%}
-}
-
-@media only screen and (min-width: 1200px) 
-{
-   #head
-    {font-size:10px;width:30%;}
-   #top 
-     {width:25%;
-      height:1px;}
-     
-}
 
 </style>
 
 <body>
 
 <div id="head">
-<h1> Practices </h1> 
+<h1> Javascript Practices </h1> 
 </div>
-
+<hr/>
 <div="back">
-  <h2> <a href="index.html">Back </a> </h2>
+  <h2> <a href="index.html"><img src="images/back.png"> </a> </h2>
 </div>
 
 
-<hr color="black"/>
+<div id="first">
+  <div id="top">
 
-<div id="top">
-<ul>
+ <ul>
 <a href="boot1.html">
 <li> Grid Practice </li> </a>
 
@@ -121,9 +116,8 @@ body
 
   
 </ul>
- 
 </div>
-
+</div>
 
 
 </body>
